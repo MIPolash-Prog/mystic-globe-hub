@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mystic Globe Docs — Mission Control</title>
+<style>
+  :root{--bg:#0a0e12;--panel:#11161c;--panel2:#161d25;--gold:#ffd23c;--green:#7ee787;--red:#ff5c5c;--txt:#e6edf3;--dim:#9aa7b4;--line:#232c36}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.55;
+    background-image:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.012) 3px 4px)}
+  .wrap{max-width:1080px;margin:0 auto;padding:22px 16px 70px}
+  header{border:1px solid var(--line);border-radius:14px;padding:26px 22px;background:
+    radial-gradient(600px 200px at 80% 0%,rgba(255,210,60,.10),transparent),var(--panel);margin-bottom:18px}
+  .cls{color:var(--green);font-size:12px;letter-spacing:3px;font-weight:700}
+  h1{font-size:clamp(24px,4.5vw,40px);color:var(--gold);letter-spacing:1px;margin:6px 0 4px}
+  .sub{color:var(--dim);font-size:14px}
+  nav{position:sticky;top:0;z-index:9;background:rgba(10,14,18,.92);backdrop-filter:blur(6px);padding:10px 0;margin-bottom:14px;border-bottom:1px solid var(--line)}
+  nav a{color:var(--txt);text-decoration:none;font-size:13px;font-weight:600;padding:7px 12px;border:1px solid var(--line);border-radius:999px;margin:3px 4px 3px 0;display:inline-block;background:var(--panel2)}
+  nav a:hover{border-color:var(--gold);color:var(--gold)}
+  h2{color:var(--gold);font-size:19px;margin:26px 0 4px;letter-spacing:.5px}
+  .h2sub{color:var(--dim);font-size:13px;margin-bottom:12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:var(--txt);display:block;transition:.15s}
+  .card:hover{border-color:var(--gold);transform:translateY(-2px)}
+  .card .t{font-weight:700;font-size:15px}
+  .card .d{color:var(--dim);font-size:12.5px;margin-top:3px}
+  .card .tag{display:inline-block;margin-top:8px;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;background:#1d2732;color:var(--green)}
+  .card .tag.free{color:var(--green)} .card .tag.cred{color:var(--gold)} .card .tag.open{color:#79c0ff}
+  .flag{font-size:22px;margin-right:6px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th{background:var(--panel2);color:var(--gold);text-align:left;padding:9px 12px;font-size:12px;letter-spacing:1px}
+  td{padding:8px 12px;border-top:1px solid var(--line)}
+  .ok{color:var(--green);font-weight:700}
+  .cmd{background:#0d1117;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-family:Consolas,monospace;font-size:13px;color:#79c0ff;display:flex;justify-content:space-between;align-items:center;gap:10px;margin:6px 0}
+  .cmd button{background:var(--panel2);color:var(--gold);border:1px solid var(--line);border-radius:7px;padding:4px 10px;cursor:pointer;font-size:12px;font-weight:700}
+  .cmd button:hover{border-color:var(--gold)}
+  .note{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;color:var(--dim);font-size:12.5px;margin:10px 0;background:var(--panel)}
+  .note b{color:var(--gold)}
+  footer{margin-top:34px;color:var(--dim);font-size:12px;text-align:center;border-top:1px solid var(--line);padding-top:16px}
+  a.ext{color:#79c0ff}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="cls">TOP SECRET // DECLASSIFIED — OPERATOR CONSOLE</div>
+  <h1>🛸 MYSTIC GLOBE DOCS — MISSION CONTROL</h1>
+  <div class="sub">Polash IT Solutions • ৯ ভাষার UAP dossier network • সব দরকারি জিনিস এক জায়গায়</div>
+</header>
+
+<nav>
+  <a href="#channels">📺 Channels</a>
+  <a href="#studio">🎬 Studio</a>
+  <a href="#tools">🧰 Free Tools</a>
+  <a href="#videos">📦 Video Catalog</a>
+  <a href="#docs">📄 Docs & Guides</a>
+  <a href="#setup">⚙️ Quick Setup</a>
+</nav>
+
+<h2 id="channels">📺 YouTube Channels</h2>
+<div class="h2sub">প্রতিটা ভাষার channel — click করলেই খুলবে (নতুন channel হলে search page দেখাবে; আসল link নিচে CONFIG-এ বসিয়ে নিবেন)</div>
+<div class="grid" id="chanGrid"></div>
+<div class="note">🔧 <b>Channel link edit:</b> এই page-এর (index.html) একদম নিচে <b>&lt;script&gt;</b>-এর ভেতরে <b>CONFIG.channels</b>-এ আপনার আসল channel URL গুলো paste করুন — যেমন <span style="color:#79c0ff">https://www.youtube.com/@YourChannelBN</span></div>
+
+<h2 id="studio">🎬 Production Studio</h2>
+<div class="h2sub">যেখানে video বানানো/ঠিক করা হয়</div>
+<div class="grid">
+  <a class="card" href="https://arena.ai" target="_blank"><div class="t">🤖 Arena AI</div><div class="d">নতুন ভাষার voice, rendering, fix — agent workspace</div><span class="tag">AI STUDIO</span></a>
+  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio" target="_blank"><div class="t">🐙 GitHub Studio Repo</div><div class="d">সব script + narration + fonts (private)</div><span class="tag">CODE</span></a>
+  <a class="card" href="https://studio.youtube.com" target="_blank"><div class="t">🎛️ YouTube Studio</div><div class="d">upload, analytics, সব channel manage</div><span class="tag">UPLOAD</span></a>
+  <a class="card" href="https://www.youtube.com" target="_blank"><div class="t">▶️ YouTube</div><div class="d">main site — দর্শক যেখানে দেখে</div><span class="tag">WATCH</span></a>
+</div>
+
+<h2 id="tools">🧰 Free Video Creation Tools</h2>
+<div class="h2sub">যেগুলো দিয়ে free-তে video/voice/music বানানো যায়</div>
+<div class="grid" id="toolGrid"></div>
+
+<h2 id="videos">📦 Video Catalog (AI version)</h2>
+<div class="h2sub">৯ ভাষা × (long 16:9 + short 9:16) = ১৮টা video — সব delivered ✅</div>
+<table>
+  <tr><th>ভাষা</th><th>Long 16:9 (5 min)</th><th>Short 9:16 (59s)</th><th>Upload pack</th></tr>
+  <tbody id="catBody"></tbody>
+</table>
+<div class="note">📤 <b>Upload packs</b> (thumb + metadata): Arena workspace-এ <b>au/upload_packs/</b> + <b>upload_packs_all.zip</b>; GitHub repo-তে script আছে (<span style="color:#79c0ff">make_packs.py</span>) — যেকোনো সময় আবার বানানো যাবে।</div>
+
+<h2 id="docs">📄 Docs & Guides</h2>
+<div class="grid">
+  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/README.md" target="_blank"><div class="t">📘 README</div><div class="d">studio-র full পরিচিতি (English)</div></a>
+  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/docs/USE_GUIDE_BN.md" target="_blank"><div class="t">🇧🇩 ব্যবহার গাইড</div><div class="d">বাংলায় step-by-step (repo-তে push বাকি — workspace-এ আছে)</div></a>
+  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/docs/CHANNEL_PLAN.md" target="_blank"><div class="t">🗓️ Channel Plan</div><div class="d">১২ channel-এর schedule + slot</div></a>
+  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/docs/DELIVERY_MANIFEST.md" target="_blank"><div class="t">📋 Delivery Manifest</div><div class="d">কোন video কখন deliver হয়েছে</div></a>
+  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/docs/FINAL_REPORT.md" target="_blank"><div class="t">🏁 Final Report</div><div class="d">পুরো project-এর report</div></a>
+  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/README_LOCAL.md" target="_blank"><div class="t">💻 Local Setup</div><div class="d">নিজের PC-তে চালানোর নিয়ম</div></a>
+</div>
+
+<h2 id="setup">⚙️ Quick Setup (নিজের PC)</h2>
+<div class="h2sub">copy button চেপে Terminal/CMD-এ paste করুন</div>
+<div id="cmdBox"></div>
+
+<footer>
+  MYSTIC GLOBE DOCS • Powered by POLASH IT SOLUTIONS • <span class="cls">© 2026</span><br>
+  এই page টি নিজেই একটা file (index.html) — GitHub Pages / যেকোনো hosting-এ বসানো যাবে
+</footer>
+</div>
+
+<script>
+/* ============ CONFIG — এখানে আপনার আসল link বসান ============ */
+const CONFIG = {
+  channels: {
+    bn:   { flag:"🇧", name:"বাংলা (BN)",        url:"https://www.youtube.com/results?search_query=mystic+globe+docs+bangla" },
+    en:   { flag:"🇺🇸", name:"English US (EN)",   url:"https://www.youtube.com/results?search_query=mystic+globe+docs+uap" },
+    enau: { flag:"🇦🇺", name:"English AU",        url:"https://www.youtube.com/results?search_query=mystic+globe+docs+australia" },
+    ja:   { flag:"🇯🇵", name:"日本語 (JA)",        url:"https://www.youtube.com/results?search_query=mystic+globe+docs+japanese" },
+    de:   { flag:"🇩", name:"Deutsch (DE)",      url:"https://www.youtube.com/results?search_query=mystic+globe+docs+deutsch" },
+    es:   { flag:"🇪🇸", name:"Español (ES)",      url:"https://www.youtube.com/results?search_query=mystic+globe+docs+espanol" },
+    nl:   { flag:"🇳🇱", name:"Nederlands (NL)",   url:"https://www.youtube.com/results?search_query=mystic+globe+docs+nederlands" },
+    no:   { flag:"🇳🇴", name:"Norsk (NO)",        url:"https://www.youtube.com/results?search_query=mystic+globe+docs+norsk" },
+    ar:   { flag:"🇦🇪", name:"العربية (AR)",       url:"https://www.youtube.com/results?search_query=mystic+globe+docs+arabic" }
+  },
+  tools: [
+    { n:"Google Vids", d:"AI দিয়ে storyboard→video, Google account-এ", u:"https://workspace.google.com/products/vids/", t:"free", tl:"FREE" },
+    { n:"Kling AI", d:"text/image→video, daily free credits", u:"https://klingai.com", t:"cred", tl:"FREE CREDITS" },
+    { n:"CapCut", d:"সহজ powerful editor (PC/mobile/web)", u:"https://www.capcut.com", t:"free", tl:"FREE" },
+    { n:"Canva Video", d:"template+video builder, বাংলা UI", u:"https://www.canva.com/video/", t:"free", tl:"FREE" },
+    { n:"DaVinci Resolve", d:"Hollywood-grade free editor", u:"https://www.blackmagicdesign.com/products/davinciresolve", t:"free", tl:"FREE" },
+    { n:"Shotcut", d:"open-source offline editor", u:"https://shotcut.org", t:"open", tl:"OPEN SOURCE" },
+    { n:"Pika", d:"AI video generation, free credits", u:"https://pika.art", t:"cred", tl:"FREE CREDITS" },
+    { n:"Runway", d:"Gen-3 AI video, free trial credits", u:"https://runwayml.com", t:"cred", tl:"FREE CREDITS" },
+    { n:"Luma Dream Machine", d:"text→cinematic video", u:"https://lumalabs.ai/dream-machine", t:"cred", tl:"FREE CREDITS" },
+    { n:"ElevenLabs", d:"best AI voice/TTS (নতুন ভাষার narration)", u:"https://elevenlabs.io", t:"cred", tl:"FREE TIER" },
+    { n:"Suno", d:"AI music/song (music bed বিকল্প)", u:"https://suno.com", t:"cred", tl:"FREE CREDITS" },
+    { n:"Pexels / Pixabay", d:"free stock footage (PD clips)", u:"https://www.pexels.com", t:"free", tl:"FREE" }
+  ],
+  cmds: [
+    "git clone https://github.com/MIPolash-Prog/mystic-globe-studio.git",
+    "cd mystic-globe-studio",
+    "pip install pillow numpy static-ffmpeg arabic-reshaper python-bidi",
+    "python fetch_ext.py",
+    "python build_longs.py bn",
+    "python build_dubs.py bn",
+    "python make_packs.py"
+  ]
+};
+/* ============================================================= */
+const cg = document.getElementById('chanGrid');
+for (const [k,c] of Object.entries(CONFIG.channels)) {
+  cg.innerHTML += `<a class="card" href="${c.url}" target="_blank"><div class="t"><span class="flag">${c.flag}</span>${c.name}</div><div class="d">YouTube channel — ${k.toUpperCase()}</div><span class="tag">CHANNEL</span></a>`;
+}
+const tg = document.getElementById('toolGrid');
+for (const t of CONFIG.tools) {
+  tg.innerHTML += `<a class="card" href="${t.u}" target="_blank"><div class="t">${t.n}</div><div class="d">${t.d}</div><span class="tag ${t.t}">${t.tl}</span></a>`;
+}
+const langs = [["bn","বাংলা"],["ja","日本語"],["de","Deutsch"],["es","Español"],["nl","Nederlands"],["no","Norsk"],["ar","العربية"],["en","English US"],["enau","English AU"]];
+const cb = document.getElementById('catBody');
+for (const [k,n] of langs) {
+  cb.innerHTML += `<tr><td>${n} <span style="color:var(--dim)">(${k})</span></td><td class="ok">✅ pentagon_us_16x9_${k}.mp4</td><td class="ok">✅ pentagon_us_short_9x16_${k}.mp4</td><td class="ok">✅ ${k}/</td></tr>`;
+}
+const cbox = document.getElementById('cmdBox');
+CONFIG.cmds.forEach(c => {
+  const div = document.createElement('div'); div.className = 'cmd';
+  div.innerHTML = `<span>${c}</span><button>copy</button>`;
+  div.querySelector('button').onclick = () => { navigator.clipboard.writeText(c); div.querySelector('button').textContent = '✓'; setTimeout(()=>div.querySelector('button').textContent='copy',1200); };
+  cbox.appendChild(div);
+});
+</script>
+</body>
+</html>
