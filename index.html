@@ -109,15 +109,16 @@
 /* ============ CONFIG — এখানে আপনার আসল link বসান ============ */
 const CONFIG = {
   channels: {
-    bn:   { flag:"🇧", name:"বাংলা (BN)",        url:"https://www.youtube.com/results?search_query=mystic+globe+docs+bangla" },
-    en:   { flag:"🇺🇸", name:"English US (EN)",   url:"https://www.youtube.com/results?search_query=mystic+globe+docs+uap" },
-    enau: { flag:"🇦🇺", name:"English AU",        url:"https://www.youtube.com/results?search_query=mystic+globe+docs+australia" },
-    ja:   { flag:"🇯🇵", name:"日本語 (JA)",        url:"https://www.youtube.com/results?search_query=mystic+globe+docs+japanese" },
-    de:   { flag:"🇩", name:"Deutsch (DE)",      url:"https://www.youtube.com/results?search_query=mystic+globe+docs+deutsch" },
-    es:   { flag:"🇪🇸", name:"Español (ES)",      url:"https://www.youtube.com/results?search_query=mystic+globe+docs+espanol" },
-    nl:   { flag:"🇳🇱", name:"Nederlands (NL)",   url:"https://www.youtube.com/results?search_query=mystic+globe+docs+nederlands" },
-    no:   { flag:"🇳🇴", name:"Norsk (NO)",        url:"https://www.youtube.com/results?search_query=mystic+globe+docs+norsk" },
-    ar:   { flag:"🇦🇪", name:"العربية (AR)",       url:"https://www.youtube.com/results?search_query=mystic+globe+docs+arabic" }
+    ja:   { flag:"🇯", name:"日本語 (JA)",         url:"https://www.youtube.com/@MysticGlobeDocsJP",   st:"live" },
+    ocean:{ flag:"🌊", name:"Deep Ocean (Ambient)", url:"https://www.youtube.com/@MysticGlobeRelaxing", st:"live" },
+    bn:   { flag:"🇧🇩", name:"বাংলা (BN)",          url:"https://studio.youtube.com", st:"soon" },
+    en:   { flag:"🇺🇸", name:"English US (EN)",      url:"https://studio.youtube.com", st:"soon" },
+    enau: { flag:"🇦🇺", name:"English AU",           url:"https://studio.youtube.com", st:"soon" },
+    de:   { flag:"🇩🇪", name:"Deutsch (DE)",         url:"https://studio.youtube.com", st:"soon" },
+    es:   { flag:"🇪🇸", name:"Español (ES)",         url:"https://studio.youtube.com", st:"soon" },
+    nl:   { flag:"🇳🇱", name:"Nederlands (NL)",      url:"https://studio.youtube.com", st:"soon" },
+    no:   { flag:"🇳🇴", name:"Norsk (NO)",           url:"https://studio.youtube.com", st:"soon" },
+    ar:   { flag:"🇦🇪", name:"العربية (AR)",          url:"https://studio.youtube.com", st:"soon" }
   },
   tools: [
     { n:"Google Vids", d:"AI দিয়ে storyboard→video, Google account-এ", u:"https://workspace.google.com/products/vids/", t:"free", tl:"FREE" },
@@ -146,7 +147,7 @@ const CONFIG = {
 /* ============================================================= */
 const cg = document.getElementById('chanGrid');
 for (const [k,c] of Object.entries(CONFIG.channels)) {
-  cg.innerHTML += `<a class="card" href="${c.url}" target="_blank"><div class="t"><span class="flag">${c.flag}</span>${c.name}</div><div class="d">YouTube channel — ${k.toUpperCase()}</div><span class="tag">CHANNEL</span></a>`;
+  cg.innerHTML += `<a class="card" href="${c.url}" target="_blank"><div class="t"><span class="flag">${c.flag}</span>${c.name}</div><div class="d">${c.st==='live' ? 'LIVE channel — '+k.toUpperCase() : 'channel তৈরি বাকি — Studio খুলবে'}</div><span class="tag ${c.st==='live'?'':'cred'}">${c.st==='live' ? '✅ LIVE' : '🔜 COMING SOON'}</span></a>`;
 }
 const tg = document.getElementById('toolGrid');
 for (const t of CONFIG.tools) {
