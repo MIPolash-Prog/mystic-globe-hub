@@ -1,171 +1,1859 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mystic Globe Docs — Mission Control</title>
-<style>
-  :root{--bg:#0a0e12;--panel:#11161c;--panel2:#161d25;--gold:#ffd23c;--green:#7ee787;--red:#ff5c5c;--txt:#e6edf3;--dim:#9aa7b4;--line:#232c36}
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.55;
-    background-image:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.012) 3px 4px)}
-  .wrap{max-width:1080px;margin:0 auto;padding:22px 16px 70px}
-  header{border:1px solid var(--line);border-radius:14px;padding:26px 22px;background:
-    radial-gradient(600px 200px at 80% 0%,rgba(255,210,60,.10),transparent),var(--panel);margin-bottom:18px}
-  .cls{color:var(--green);font-size:12px;letter-spacing:3px;font-weight:700}
-  h1{font-size:clamp(24px,4.5vw,40px);color:var(--gold);letter-spacing:1px;margin:6px 0 4px}
-  .sub{color:var(--dim);font-size:14px}
-  nav{position:sticky;top:0;z-index:9;background:rgba(10,14,18,.92);backdrop-filter:blur(6px);padding:10px 0;margin-bottom:14px;border-bottom:1px solid var(--line)}
-  nav a{color:var(--txt);text-decoration:none;font-size:13px;font-weight:600;padding:7px 12px;border:1px solid var(--line);border-radius:999px;margin:3px 4px 3px 0;display:inline-block;background:var(--panel2)}
-  nav a:hover{border-color:var(--gold);color:var(--gold)}
-  h2{color:var(--gold);font-size:19px;margin:26px 0 4px;letter-spacing:.5px}
-  .h2sub{color:var(--dim);font-size:13px;margin-bottom:12px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:var(--txt);display:block;transition:.15s}
-  .card:hover{border-color:var(--gold);transform:translateY(-2px)}
-  .card .t{font-weight:700;font-size:15px}
-  .card .d{color:var(--dim);font-size:12.5px;margin-top:3px}
-  .card .tag{display:inline-block;margin-top:8px;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;background:#1d2732;color:var(--green)}
-  .card .tag.free{color:var(--green)} .card .tag.cred{color:var(--gold)} .card .tag.open{color:#79c0ff}
-  .flag{font-size:22px;margin-right:6px}
-  table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-  th{background:var(--panel2);color:var(--gold);text-align:left;padding:9px 12px;font-size:12px;letter-spacing:1px}
-  td{padding:8px 12px;border-top:1px solid var(--line)}
-  .ok{color:var(--green);font-weight:700}
-  .cmd{background:#0d1117;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-family:Consolas,monospace;font-size:13px;color:#79c0ff;display:flex;justify-content:space-between;align-items:center;gap:10px;margin:6px 0}
-  .cmd button{background:var(--panel2);color:var(--gold);border:1px solid var(--line);border-radius:7px;padding:4px 10px;cursor:pointer;font-size:12px;font-weight:700}
-  .cmd button:hover{border-color:var(--gold)}
-  .note{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;color:var(--dim);font-size:12.5px;margin:10px 0;background:var(--panel)}
-  .note b{color:var(--gold)}
-  footer{margin-top:34px;color:var(--dim);font-size:12px;text-align:center;border-top:1px solid var(--line);padding-top:16px}
-  a.ext{color:#79c0ff}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Monjurul Islam Polash — Digital Marketer, Web Developer, SEO Expert & Virtual Assistant. Available 24/7.">
+    <meta property="og:title" content="Monjurul Islam Polash — Digital Expert & Freelancer">
+    <meta property="og:image" content="https://uploads.onecompiler.io/44a4h29nq/44a4gxy6p/round%20main%20without%20background.png">
+    <meta name="theme-color" content="#764ba2">
+    <title>Monjurul Islam Polash | Digital Expert & Freelancer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="monetag" content="d06a7f60f7b8f8ac8f8d9510a2bf2428">
+    
+    <style>
+        /* Reset & Base */
+        * { font-family: 'Poppins', sans-serif; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #111827;
+            color: #fff;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+        :root {
+            --purple: #764ba2;
+            --violet: #667eea;
+            --pink: #f093fb;
+            --yellow: #facc15;
+            --green: #22c55e;
+            --dark: #111827;
+            --dark2: #1f2937;
+            --grad: linear-gradient(135deg,#667eea 0%,#764ba2 50%,#f093fb 100%);
+            --r: 9999px;
+        }
+
+        /* Global Helpers */
+        .gradient-text { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-bg { background: var(--grad); }
+        .scroll-reveal { opacity: 0; transform: translateY(50px); transition: all 0.8s ease; }
+        .scroll-reveal.active { opacity: 1; transform: translateY(0); }
+        .card-hover { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .card-hover:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 25px 50px -12px rgba(102, 126, 234, 0.4); }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+        .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+        @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); } 50% { box-shadow: 0 0 40px rgba(102, 126, 234, 0.8), 0 0 60px rgba(118, 75, 162, 0.6); } }
+        .blob { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; animation: blob-morph 8s ease-in-out infinite; }
+        @keyframes blob-morph { 0%, 100% { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; } 25% { border-radius: 70% 30% 50% 50% / 30% 70% 30% 70%; } 50% { border-radius: 30% 70% 30% 70% / 50% 50% 70% 30%; } 75% { border-radius: 50% 50% 30% 70% / 70% 30% 70% 30%; } }
+        .particles { position: absolute; width: 100%; height: 100%; overflow: hidden; }
+        .particle { position: absolute; width: 10px; height: 10px; background: rgba(255,255,255,0.3); border-radius: 50%; animation: particle-float 15s infinite; }
+        @keyframes particle-float { 0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; } }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10,5,30,.92);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,.12);
+            padding: 0 20px;
+            height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .nav-logo-badge {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: var(--grad);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1rem;
+            color: #fff;
+        }
+        .nav-logo-text { font-size: 1rem; font-weight: 800; color: #fff; line-height: 1.1; }
+        .nav-links { display: flex; gap: 4px; }
+        .nav-links a {
+            color: rgba(255,255,255,.7);
+            text-decoration: none;
+            font-size: .85rem;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: all .2s;
+        }
+        .nav-links a:hover { color: #fff; background: rgba(255,255,255,.1); }
+        .nav-right { display: flex; align-items: center; gap: 8px; }
+        .nav-cta {
+            background: var(--grad);
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: var(--r);
+            font-weight: 700;
+            font-size: .8rem;
+            text-decoration: none;
+            transition: all .3s;
+            box-shadow: 0 4px 14px rgba(102,126,234,.4);
+        }
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(102,126,234,.6); }
+        .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+        .nav-hamburger span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; transition: all .3s; }
+
+        /* Mobile Navigation */
+        @media(max-width: 1000px) {
+            .nav-links { display: none; }
+            .nav-hamburger { display: flex; }
+        }
+
+        /* Sections */
+        section { padding: 80px 20px; }
+        .sec-header { text-align: center; margin-bottom: 40px; }
+        .sec-title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; line-height: 1.1; margin-bottom: 14px; }
+        .sec-sub { color: rgba(255,255,255,.75); font-size: 1rem; max-width: 560px; margin: 0 auto; }
+
+        /* Hero */
+        .hero { min-height: 100vh; display: flex; align-items: center; position: relative; }
+        .hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        @media(max-width: 900px) {
+            .hero-inner { grid-template-columns: 1fr; text-align: center; }
+        }
+
+        /* Buttons */
+        .contact-btn {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            padding: 14px 28px;
+            border-radius: var(--r);
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .contact-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--grad);
+            z-index: -2;
+        }
+        .contact-btn::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            transition: all 0.4s ease;
+            z-index: -1;
+        }
+        .contact-btn:hover::before { width: 100%; }
+
+        /* Services Cards */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; }
+        .service-card {
+            background: rgba(255,255,255,.05);
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 24px;
+            padding: 32px;
+            transition: all .3s;
+        }
+        .service-card:hover {
+            border-color: rgba(255,255,255,.25);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,.3);
+        }
+        .service-ico {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--grad);
+        }
+        .service-ico i { font-size: 1.8rem; color: white; }
+
+        /* AI Quick Strip */
+        .ai-strip {
+            display:flex;
+            flex-wrap:wrap;
+            gap:8px;
+            padding:12px 4px;
+            justify-content: center;
+             margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .ai-strip-btn {
+            padding:6px 14px;
+            border-radius: var(--r);
+            background: rgba(255,255,255,.15);
+            border:1px solid rgba(255,255,255,.25);
+            color:#fff;
+            font-size:.78rem;
+            font-weight:600;
+            text-decoration:none;
+            transition:all .2s;
+        }
+        .ai-strip-btn:hover { background: rgba(255,255,255,.28); transform: translateY(-2px); }
+
+        /* Hire Platforms */
+        .platforms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .platform-card {
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.15);
+            border-radius: 24px;
+            padding: 32px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: all .3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .platform-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            border-color: rgba(255,255,255,.3);
+            box-shadow: 0 16px 40px rgba(0,0,0,.3);
+        }
+
+        /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+           ✅ NEW SMART TOOLKIT 182 TOOLS
+           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+        .toolkit { background: rgba(0,0,0,.15); }
+        .tk-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .tk-tab {
+            padding: 8px 16px;
+            border-radius: 99px;
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.15);
+            color: rgba(255,255,255,.7);
+            font-size: .8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .2s;
+        }
+        .tk-tab.active, .tk-tab:hover {
+            background: var(--grad);
+            color: white;
+            border-color: transparent;
+        }
+        .tk-search {
+            max-width: 500px;
+            margin: 0 auto 32px auto;
+            position: relative;
+        }
+        .tk-search input {
+            width: 100%;
+            padding: 12px 20px 12px 48px;
+            border-radius: 99px;
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.15);
+            color: white;
+            font-size: .9rem;
+            outline: none;
+        }
+        .tk-search i {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255,255,255,.4);
+        }
+        .tk-count {
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: .9rem;
+            color: rgba(255,255,255,.5);
+        }
+        .tk-count strong {
+            color: #a78bfa;
+            font-size: 1.1rem;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 12px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .tool-card {
+            background: rgba(255,255,255,.06);
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 14px;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: inherit;
+            transition: all .25s;
+            position: relative;
+            overflow: hidden;
+        }
+        .tool-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            border-color: rgba(255,255,255,.3);
+            box-shadow: 0 12px 32px rgba(0,0,0,.3);
+            background: rgba(255,255,255,.1);
+        }
+        .tool-card .free-badge {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #22c55e;
+            color: white;
+            font-size: .65rem;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+        .tool-card.hidden { display: none; }
+        .tk-category {
+            grid-column: 1 / -1;
+            margin: 24px 0 12px 0;
+            font-size: 1.1rem;
+            font-weight: 800;
+            padding-left: 8px;
+            border-left: 3px solid var(--purple);
+        }
+
+        /* Music Player */
+        #mplayer {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            background: rgba(10,3,40,.93);
+            backdrop-filter: blur(20px);
+            border: 1.5px solid rgba(255,255,255,.22);
+            border-radius: var(--r);
+            padding: 7px 14px 7px 7px;
+            box-shadow: 0 6px 30px rgba(0,0,0,.55);
+        }
+        .mp-orb {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg,#7c3aed,#06b6d4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .mp-orb.on { animation: mpGlow 1.8s ease-in-out infinite; }
+        @keyframes mpGlow { 0%, 100% { box-shadow: 0 0 0 0 rgba(124,58,237,.7); } 50% { box-shadow: 0 0 0 9px rgba(124,58,237,0); } }
+        .mp-lbl { font-size: .72rem; font-weight: 800; color: #fff; white-space: nowrap; max-width: 115px; overflow: hidden; text-overflow: ellipsis; }
+        .mpb {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background: rgba(255,255,255,.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .mpb:hover { background: rgba(255,255,255,.3); }
+
+        /* AI Fab */
+        #ai-fab {
+            position: fixed;
+            bottom: 92px;
+            right: 22px;
+            z-index: 9998;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background: linear-gradient(135deg,#6a11cb,#2575fc);
+            color: #fff;
+            font-size: 22px;
+            box-shadow: 0 6px 20px rgba(0,0,0,.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s;
+        }
+        #ai-fab:hover { transform: scale(1.1); }
+
+        /* Footer */
+        footer {
+            background: #0a0520;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,.1);
+        }
+    </style>
+<script src="https://pl30121088.effectivecpmnetwork.com/50/58/eb/5058ebef663478980d24f49269796d55.js"></script>
+<script src="https://pl30121091.effectivecpmnetwork.com/f7/d3/b8/f7d3b8a5e0cd02bd8d4ebb97c681a474.js"></script>
+
 </head>
 <body>
-<div class="wrap">
 
-<header>
-  <div class="cls">TOP SECRET // DECLASSIFIED — OPERATOR CONSOLE</div>
-  <h1>🛸 MYSTIC GLOBE DOCS — MISSION CONTROL</h1>
-  <div class="sub">Polash IT Solutions • ৯ ভাষার UAP dossier network • সব দরকারি জিনিস এক জায়গায়</div>
-</header>
-
+<!-- Navigation -->
 <nav>
-  <a href="#channels">📺 Channels</a>
-  <a href="#studio">🎬 Studio</a>
-  <a href="#tools">🧰 Free Tools</a>
-  <a href="#videos">📦 Video Catalog</a>
-  <a href="#docs">📄 Docs & Guides</a>
-  <a href="#setup">⚙️ Quick Setup</a>
+    <a href="#hero" class="nav-logo">
+        <div class="nav-logo-badge">MIP</div>
+        <div class="nav-logo-text">
+            Monjurul Islam Polash
+        </div>
+    </a>
+
+    <div class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#hire">Hire Me</a>
+        <a href="#toolkit">AI Tools</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-right">
+        <a href="#contact" class="nav-cta">
+            <i class="fas fa-rocket"></i> Let's Talk
+        </a>
+        <button class="nav-hamburger">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+  
+    <!-- AI Quick-Links Strip -->
+      <div class="ai-strip flex align-items: center;">
+    
+        <a href="https://arena.ai/c/019c156b-35a6-7d4b-b1a2-e6ff82ab8079" target="_blank" class="ai-strip-btn">Arena</a>
+        <a href="https://console.byteplus.com/ark/region:ark+ap-southeast-1/experience/chat?csid=excs-202603252243-%5Bfmuxxh1k80yO0vEeQQbgE%5D&modelId=glm-4-7-251222&isHistory=true" target="_blank" class="ai-strip-btn">BytePlus</a>
+        <a href="https://yupp.ai/" target="_blank" class="ai-strip-btn">Yupp</a> 
+        <a href="https://aistudio.google.com/prompts/new_chat" target="_blank" class="ai-strip-btn">AI Studio</a>
+        <a href="https://claude.ai/chats" target="_blank" class="ai-strip-btn">Claude</a>
+        <a href="https://gemini.google.com" target="_blank" class="ai-strip-btn">Gemini</a>
+        <a href="https://chat.deepseek.com" target="_blank" class="ai-strip-btn">DeepSeek</a>
+        <a href="https://chatgpt.com" target="_blank" class="ai-strip-btn">ChatGPT</a>
+        <a href="https://lovable.dev/dashboard" target="_blank" class="ai-strip-btn">Lovable</a>
+        <a href="https://www.bohrium.com/en" target="_blank" class="ai-strip-btn">Bohrium</a>
+        <a href="https://www.perplexity.ai" target="_blank" class="ai-strip-btn">Perplexity</a>
+        <a href="https://x.com/i/grok" target="_blank" class="ai-strip-btn">Grok</a>
+        <a href="https://meta.ai/" target="_blank" class="ai-strip-btn">Meta</a>
+        <a href="https://ai.invideo.io" target="_blank" class="ai-strip-btn">InVideo</a>
+        <a href="https://aiapp.vidnoz.com/edit/?from=video&id=25111795" target="_blank" class="ai-strip-btn"> Vidnoz</a>
+        <a href="https://onecompiler.com/html" target="_blank" class="ai-strip-btn">OneComp</a>
+      
+     </div>
+</div> 
+  
+    
+
 </nav>
+    <!-- Hero Section -->
+<section id="hero" class="hero gradient-bg">
+    <div class="particles" id="particles"></div>
 
-<h2 id="channels">📺 YouTube Channels</h2>
-<div class="h2sub">প্রতিটা ভাষার channel — click করলেই খুলবে (নতুন channel হলে search page দেখাবে; আসল link নিচে CONFIG-এ বসিয়ে নিবেন)</div>
-<div class="grid" id="chanGrid"></div>
-<div class="note">🔧 <b>Channel link edit:</b> এই page-এর (index.html) একদম নিচে <b>&lt;script&gt;</b>-এর ভেতরে <b>CONFIG.channels</b>-এ আপনার আসল channel URL গুলো paste করুন — যেমন <span style="color:#79c0ff">https://www.youtube.com/@YourChannelBN</span></div>
+ 
 
-<h2 id="studio">🎬 Production Studio</h2>
-<div class="h2sub">যেখানে video বানানো/ঠিক করা হয়</div>
-<div class="grid">
-  <a class="card" href="https://arena.ai" target="_blank"><div class="t">🤖 Arena AI</div><div class="d">নতুন ভাষার voice, rendering, fix — agent workspace</div><span class="tag">AI STUDIO</span></a>
-  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio" target="_blank"><div class="t">🐙 GitHub Studio Repo</div><div class="d">সব script + narration + fonts (private)</div><span class="tag">CODE</span></a>
-  <a class="card" href="https://studio.youtube.com" target="_blank"><div class="t">🎛️ YouTube Studio</div><div class="d">upload, analytics, সব channel manage</div><span class="tag">UPLOAD</span></a>
-  <a class="card" href="https://www.youtube.com" target="_blank"><div class="t">▶️ YouTube</div><div class="d">main site — দর্শক যেখানে দেখে</div><span class="tag">WATCH</span></a>
-</div>
 
-<h2 id="tools">🧰 Free Video Creation Tools</h2>
-<div class="h2sub">যেগুলো দিয়ে free-তে video/voice/music বানানো যায়</div>
-<div class="grid" id="toolGrid"></div>
 
-<h2 id="videos">📦 Video Catalog (AI version)</h2>
-<div class="h2sub">৯ ভাষা × (long 16:9 + short 9:16) = ১৮টা video — সব delivered ✅</div>
-<table>
-  <tr><th>ভাষা</th><th>Long 16:9 (5 min)</th><th>Short 9:16 (59s)</th><th>Upload pack</th></tr>
-  <tbody id="catBody"></tbody>
-</table>
-<div class="note">📤 <b>Upload packs</b> (thumb + metadata): Arena workspace-এ <b>au/upload_packs/</b> + <b>upload_packs_all.zip</b>; GitHub repo-তে script আছে (<span style="color:#79c0ff">make_packs.py</span>) — যেকোনো সময় আবার বানানো যাবে।</div>
+    <div class="hero-inner">
+        <div>
+            <p class="text-yellow-400 font-semibold mb-4">👋 Hello, I'm</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                Monjurul Islam<br><span class="text-yellow-400">Polash</span>
+            </h1>
+            <div class="text-xl md:text-2xl text-white/90 mb-8 h-10">
+                <span id="typed-text"></span><span class="animate-pulse">|</span>
+            </div>
+            <p class="text-white/70 text-lg mb-10">
+                Transforming ideas into digital success stories. Your trusted partner for digital marketing, web development, and online growth.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#hire" class="contact-btn pulse-glow">
+                    <i class="fas fa-rocket mr-2"></i> Hire Me Now
+                </a>
+                <a href="#contact" class="border-2 border-white/50 px-8 py-4 rounded-full text-white font-semibold text-lg hover:bg-white hover:text-purple-700 transition">
+                    <i class="fas fa-envelope mr-2"></i> Get In Touch
+                </a>
+            </div>
 
-<div class="note">🛸 <b>NEW standalone dossier:</b> OKINOSHIMA — The Forbidden Island (EN • 58s • 9:16) ✅ QC-passed • 18 cuts + live PD/CC footage • upload pack: <b>upload_packs/oki/</b> (thumb + metadata + credits) • video: workspace <b>deliver/okinoshima_short_9x16_en.mp4</b></div>
-<h2 id="docs">📄 Docs & Guides</h2>
-<div class="grid">
-  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/README.md" target="_blank"><div class="t">📘 README</div><div class="d">studio-র full পরিচিতি (English)</div></a>
-  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/docs/USE_GUIDE_BN.md" target="_blank"><div class="t">🇧🇩 ব্যবহার গাইড</div><div class="d">বাংলায় step-by-step (repo-তে push বাকি — workspace-এ আছে)</div></a>
-  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/docs/CHANNEL_PLAN.md" target="_blank"><div class="t">🗓️ Channel Plan</div><div class="d">১২ channel-এর schedule + slot</div></a>
-  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/docs/DELIVERY_MANIFEST.md" target="_blank"><div class="t">📋 Delivery Manifest</div><div class="d">কোন video কখন deliver হয়েছে</div></a>
-  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/docs/FINAL_REPORT.md" target="_blank"><div class="t">🏁 Final Report</div><div class="d">পুরো project-এর report</div></a>
-  <a class="card" href="https://github.com/MIPolash-Prog/mystic-globe-studio/blob/main/README_LOCAL.md" target="_blank"><div class="t">💻 Local Setup</div><div class="d">নিজের PC-তে চালানোর নিয়ম</div></a>
-</div>
+        </div>
+        <div class="text-center">
+            <p style="color:orange" class="font-semibold mb-2">BD Time & Date:</p>
+            <h1 style="color:orange" id="bdtDateTime" class="text-font-semibold mb-6"></h1>
 
-<h2 id="setup">⚙️ Quick Setup (নিজের PC)</h2>
-<div class="h2sub">copy button চেপে Terminal/CMD-এ paste করুন</div>
-<div id="cmdBox"></div>
+            <div class="relative flex justify-center">
+                <div class="w-72 h-72 md:w-96 md:h-96 blob gradient-bg floating flex items-center justify-center shadow-2xl">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center shadow-inner overflow-hidden">
+                        <img src="https://uploads.onecompiler.io/44a4h29nq/44a4gxy6p/round%20main%20without%20background.png" alt="Monjurul Islam Polash" class="w-full h-full object-cover">
+                    </div>
+                </div>
 
+                <div class="absolute top-5 right-10 w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center floating shadow-lg" style="animation-delay: 0.5s;">
+                    <a href="https://wa.me/8801723328481" target="_blank" class="w-full h-full flex items-center justify-center">
+                        <i class="fab fa-whatsapp text-3xl text-white"></i>
+                    </a>
+                </div>
+
+                <div class="absolute bottom-5 right-5 w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-full flex items-center justify-center floating shadow-lg" style="animation-delay: 1s;">
+                    <a href="mailto:Polash@programmer.net" target="_blank" class="w-full h-full flex items-center justify-center">
+                        <i class="fas fa-envelope text-2xl text-white"></i>
+                    </a>
+                </div>
+
+                <div class="absolute bottom-10 left-5 w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center floating shadow-lg" style="animation-delay: 1.5s;">
+                    <a href="https://github.com/MIPolash-Prog" target="_blank" class="w-full h-full flex items-center justify-center">
+                        <i class="fas fa-code text-2xl text-white"></i>
+                    </a>
+                </div>
+                <div class="absolute top-5 left-10 w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center floating shadow-lg" style="animation-delay: 2s;">
+                        <a href="tel:+8801730746563" target="_blank" class="w-full h-full flex items-center justify-center">
+                            <i class="fas fa-phone text-3xl text-white"></i>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="sec-header">
+        <p class="text-purple-400 font-semibold mb-4">WHAT I DO</p>
+        <h2 class="sec-title">My <span class="gradient-text">Services</span></h2>
+        <p class="sec-sub">Delivering exceptional digital solutions tailored to your business needs</p>
+    </div>
+
+    <div class="services-grid">
+        <div class="service-card card-hover scroll-reveal">
+            <div class="service-ico">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Digital Marketing</h3>
+            <p class="text-gray-400">Strategic digital marketing campaigns that drive traffic, engagement, and conversions for your business.</p>
+        </div>
+
+        <div class="service-card card-hover scroll-reveal">
+            <div class="service-ico" style="background: linear-gradient(135deg, #2563eb, #06b6d4);">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Web Development</h3>
+            <p class="text-gray-400">Custom, responsive websites and web applications built with modern technologies and best practices.</p>
+        </div>
+
+        <div class="service-card card-hover scroll-reveal">
+            <div class="service-ico" style="background: linear-gradient(135deg, #22c55e, #14b8a6);">
+                <i class="fas fa-search"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">SEO Expert</h3>
+            <p class="text-gray-400">Boost your search rankings and organic traffic with proven SEO strategies and techniques.</p>
+        </div>
+
+        <div class="service-card card-hover scroll-reveal">
+            <div class="service-ico" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">
+                <i class="fas fa-share-alt"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Social Media Marketing</h3>
+            <p class="text-gray-400">Build your brand presence and engage your audience across all major social platforms.</p>
+        </div>
+
+        <div class="service-card card-hover scroll-reveal">
+            <div class="service-ico" style="background: linear-gradient(135deg, #f59e0b, #ea580c);">
+                <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Virtual Assistance</h3>
+            <p class="text-gray-400">Professional virtual assistance services to help manage your daily business operations efficiently.</p>
+        </div>
+
+        <div class="service-card card-hover gradient-bg scroll-reveal">
+            <div class="service-ico" style="background: rgba(255,255,255,.2);">
+                <i class="fas fa-plus"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Need Something Else?</h3>
+            <p class="text-white/80 mb-4">Let's discuss your custom requirements</p>
+            <a href="#contact" class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold">Contact Me</a>
+        </div>
+    </div>
+</section>
+
+<!-- Hire Me Section -->
+<section id="hire" class="bg-gray-800/30">
+    <div class="sec-header">
+        <p class="text-yellow-400 font-semibold mb-4">WORK WITH ME</p>
+        <h2 class="sec-title">Hire Me On <span class="gradient-text">Top Platforms</span></h2>
+        <p class="sec-sub">Available on all major freelancing platforms. Choose your preferred platform to start working with me!</p>
+    </div>
+
+    <div class="platforms-grid">
+        <a href="https://www.fiverr.com" target="_blank" class="platform-card">
+            <div class="w-20 h-20 bg-white rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <span class="text-green-500 font-bold text-3xl">F.</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Fiverr</h3>
+            <p class="text-white/80 mb-4">Top Rated Seller</p>
+            <span class="inline-flex items-center text-white font-semibold">
+                Hire Me <i class="fas fa-arrow-right ml-2"></i>
+            </span>
+        </a>
+
+        <a href="https://www.upwork.com" target="_blank" class="platform-card">
+            <div class="w-20 h-20 bg-white rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <span class="text-green-600 font-bold text-3xl">Up</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Upwork</h3>
+            <p class="text-white/80 mb-4">Top Freelancer</p>
+            <span class="inline-flex items-center text-white font-semibold">
+                Hire Me <i class="fas fa-arrow-right ml-2"></i>
+            </span>
+        </a>
+
+        <a href="https://www.peopleperhour.com" target="_blank" class="platform-card">
+            <div class="w-20 h-20 bg-white rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <span class="text-blue-500 font-bold text-3xl">PPH</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">PeoplePerHour</h3>
+            <p class="text-white/80 mb-4">Verified Expert</p>
+            <span class="inline-flex items-center text-white font-semibold">
+                Hire Me <i class="fas fa-arrow-right ml-2"></i>
+            </span>
+        </a>
+
+        <a href="https://www.freelancer.com" target="_blank" class="platform-card">
+            <div class="w-20 h-20 bg-white rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <span class="text-blue-600 font-bold text-3xl">Fr</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Freelancer.com</h3>
+            <p class="text-white/80 mb-4">Professional Freelancer</p>
+            <span class="inline-flex items-center text-white font-semibold">
+                Hire Me <i class="fas fa-arrow-right ml-2"></i>
+            </span>
+        </a>
+
+        <a href="https://www.guru.com" target="_blank" class="platform-card">
+            <div class="w-20 h-20 bg-white rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <span class="text-purple-500 font-bold text-3xl">G</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Guru.com</h3>
+            <p class="text-white/80 mb-4">Trusted Expert</p>
+            <span class="inline-flex items-center text-white font-semibold">
+                Hire Me <i class="fas fa-arrow-right ml-2"></i>
+            </span>
+        </a>
+
+        <a href="#contact" class="platform-card">
+            <div class="w-20 h-20 bg-white rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <i class="fas fa-handshake text-orange-500 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Direct Hire</h3>
+            <p class="text-white/80 mb-4">No Platform Fees!</p>
+            <span class="inline-flex items-center text-white font-semibold">
+                Contact Now <i class="fas fa-arrow-right ml-2"></i>
+            </span>
+        </a>
+    </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    ✅ SMART TOOLKIT - 182 AI TOOLS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="toolkit" class="toolkit">
+    <div class="sec-header">
+        <p class="text-purple-400 font-semibold mb-4">🤖 SMART TOOLKIT</p>
+        <h2 class="sec-title">AI Tools I <span class="gradient-text">Use Daily</span></h2>
+        <p class="sec-sub">182 curated AI tools across all categories — every tool I personally use for client work.</p>
+    </div>
+
+    <div class="tk-tabs">
+        <button class="tk-tab active" data-filter="all">All Tools</button>
+        <button class="tk-tab" data-filter="webdev">Web Dev</button>
+        <button class="tk-tab" data-filter="seo">SEO</button>
+        <button class="tk-tab" data-filter="marketing">Marketing</button>
+        <button class="tk-tab" data-filter="video">Video AI</button>
+        <button class="tk-tab" data-filter="audio">Audio AI</button>
+        <button class="tk-tab" data-filter="va">Virtual Assistant</button>
+        <button class="tk-tab" data-filter="medical">Medical VA</button>
+        <button class="tk-tab" data-filter="design">Design AI</button>
+        <button class="tk-tab" data-filter="research">Research</button>
+    </div>
+
+    <div class="tk-search">
+        <i class="fas fa-search"></i>
+        <input type="text" id="tool-search" placeholder="Search 182 AI tools...">
+    </div>
+
+    <div class="tk-count">Showing <strong id="count-shown">182</strong> tools</div>
+
+    <div id="tools-wrap" class="tools-grid"></div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="sec-header">
+        <p class="text-purple-400 font-semibold mb-4">GET IN TOUCH</p>
+        <h2 class="sec-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="sec-sub">Ready to start your project? Reach out through any of these channels!</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-1200 mx-auto">
+        <a href="tel:+8801730746563" class="service-card card-hover text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <i class="fas fa-phone text-3xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Call Me</h3>
+            <p class="text-blue-400 font-medium">+880 1730-746563</p>
+        </a>
+
+        <a href="https://wa.me/8801723328481" target="_blank" class="service-card card-hover text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <i class="fab fa-whatsapp text-4xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+            <p class="text-green-400 font-medium">+880 1723-328481</p>
+        </a>
+
+        <a href="mailto:Polash@programmer.net" class="service-card card-hover text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-pink-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <i class="fas fa-envelope text-3xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Email Me</h3>
+            <p class="text-pink-400 font-medium">Polash@programmer.net</p>
+        </a>
+
+        <a href="https://www.messenger.com/t/1319856144" target="_blank" class="service-card card-hover gradient-bg text-center">
+            <div class="w-20 h-20 bg-white/20 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <i class="fab fa-facebook-messenger text-3xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Messenger</h3>
+            <p class="text-white/80">Usually replies within 1 hour!</p>
+        </a>
+    </div>
+</section>
+<script async="async" data-cfasync="false" src="https://pl30121089.effectivecpmnetwork.com/df779c453b41a82d7791842b3ffd37c5/invoke.js"></script>
+<div id="container-df779c453b41a82d7791842b3ffd37c5"></div>
+<script>
+  atOptions = {
+    'key' : 'b0f4db55293e1b4761e1163fc70959a2',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/b0f4db55293e1b4761e1163fc70959a2/invoke.js"></script>
+<script>
+  atOptions = {
+    'key' : '95a5ade9f674f20b3c744cabc6494de5',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/95a5ade9f674f20b3c744cabc6494de5/invoke.js"></script>
+<script>
+  atOptions = {
+    'key' : '537ab60f19bcf0b0e856d75509e64f2b',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/537ab60f19bcf0b0e856d75509e64f2b/invoke.js"></script>
+<script>
+  atOptions = {
+    'key' : 'b860501f607632ef7f914bae3563ac35',
+    'format' : 'iframe',
+    'height' : 600,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script>
+  atOptions = {
+    'key' : '4daff98090344dbef936ab673ff43636',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/4daff98090344dbef936ab673ff43636/invoke.js"></script>
+<script>
+  atOptions = {
+    'key' : '8a5011353ea507326ceb94166fe81a77',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/8a5011353ea507326ceb94166fe81a77/invoke.js"></script>
+
+</script>
+<script src="https://www.highperformanceformat.com/b860501f607632ef7f914bae3563ac35/invoke.js"></script>
+
+<!-- Footer -->
 <footer>
-  MYSTIC GLOBE DOCS • Powered by POLASH IT SOLUTIONS • <span class="cls">© 2026</span><br>
-  এই page টি নিজেই একটা file (index.html) — GitHub Pages / যেকোনো hosting-এ বসানো যাবে
+    <h4 class="text-2xl font-bold mb-4">Monjurul Islam <span class="text-yellow-400">Polash</span></h4>
+    <p class="text-gray-400 mb-8">Digital Marketing Expert · Web Developer · SEO Specialist</p>
+    <div class="flex justify-center gap-4 mb-8">
+        <a href="https://wa.me/8801723328481" target="_blank" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-500 transition">
+            <i class="fab fa-whatsapp text-xl"></i>
+        </a>
+        <a href="mailto:Polash@programmer.net" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+            <i class="fas fa-envelope text-xl"></i>
+        </a>
+        <a href="https://github.com/MIPolash-Prog" target="_blank" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-500 transition">
+            <i class="fab fa-github text-xl"></i>
+        </a>
+    </div>
+    <p class="text-gray-500">© 2025 Monjurul Islam Polash. All rights reserved.</p>
+
+ <!-- AI Quick-Links Strip -->
+      <div class="ai-strip flex item">
+    
+        <a href="https://arena.ai/c/019c156b-35a6-7d4b-b1a2-e6ff82ab8079" target="_blank" class="ai-strip-btn">Arena</a>
+        <a href="https://console.byteplus.com/ark/region:ark+ap-southeast-1/experience/chat?csid=excs-202603252243-%5Bfmuxxh1k80yO0vEeQQbgE%5D&modelId=glm-4-7-251222&isHistory=true" target="_blank" class="ai-strip-btn">BytePlus</a>
+        <a href="https://yupp.ai/" target="_blank" class="ai-strip-btn">Yupp</a> 
+        <a href="https://aistudio.google.com/prompts/new_chat" target="_blank" class="ai-strip-btn">AI Studio</a>
+        <a href="https://claude.ai/chats" target="_blank" class="ai-strip-btn">Claude</a>
+        <a href="https://gemini.google.com" target="_blank" class="ai-strip-btn">Gemini</a>
+        <a href="https://chat.deepseek.com" target="_blank" class="ai-strip-btn">DeepSeek</a>
+        <a href="https://chatgpt.com" target="_blank" class="ai-strip-btn">ChatGPT</a>
+        <a href="https://lovable.dev/dashboard" target="_blank" class="ai-strip-btn">Lovable</a>
+        <a href="https://www.bohrium.com/en" target="_blank" class="ai-strip-btn">Bohrium</a>
+        <a href="https://www.perplexity.ai" target="_blank" class="ai-strip-btn">Perplexity</a>
+        <a href="https://x.com/i/grok" target="_blank" class="ai-strip-btn">Grok</a>
+        <a href="https://meta.ai/" target="_blank" class="ai-strip-btn">Meta</a>
+        <a href="https://ai.invideo.io" target="_blank" class="ai-strip-btn">InVideo</a>
+        <a href="https://aiapp.vidnoz.com/edit/?from=video&id=25111795" target="_blank" class="ai-strip-btn"> Vidnoz</a>
+       </div>
+    </div>  
 </footer>
+
+<!-- Music Player -->
+<div id="mplayer">
+    <div class="mp-orb" id="mp-orb">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+    </div>
+    <div style="min-width:0">
+        <div class="mp-lbl" id="mp-lbl">🎵 Welcome</div>
+    </div>
+    <button class="mpb" onclick="mpToggle()" title="Play/Pause">
+        <svg id="mp-ico" width="12" height="12" viewBox="0 0 24 24" fill="#fff"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+    </button>
+    <button class="mpb" onclick="mpClose()" title="Close">✕</button>
 </div>
+<!-- Audio -->
+<audio id="bgMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
 
 <script>
-/* ============ CONFIG — এখানে আপনার আসল link বসান ============ */
-const CONFIG = {
-  channels: {
-    ja:   { flag:"🇯", name:"日本語 (JA)",         url:"https://www.youtube.com/@MysticGlobeDocsJP",   st:"live" },
-    ocean:{ flag:"🌊", name:"Deep Ocean (Ambient)", url:"https://www.youtube.com/@MysticGlobeRelaxing", st:"live" },
-    bn:   { flag:"🇧🇩", name:"বাংলা (BN)",          url:"https://studio.youtube.com", st:"soon" },
-    en:   { flag:"🇺🇸", name:"English US (EN)",      url:"https://studio.youtube.com", st:"soon" },
-    enau: { flag:"🇦🇺", name:"English AU",           url:"https://studio.youtube.com", st:"soon" },
-    de:   { flag:"🇩🇪", name:"Deutsch (DE)",         url:"https://studio.youtube.com", st:"soon" },
-    es:   { flag:"🇪🇸", name:"Español (ES)",         url:"https://www.youtube.com/@MysticGlobeDocsES/videos", st:"live" },
-    nl:   { flag:"🇳🇱", name:"Nederlands (NL)",      url:"https://studio.youtube.com", st:"soon" },
-    no:   { flag:"🇳🇴", name:"Norsk (NO)",           url:"https://studio.youtube.com", st:"soon" },
-    ar:   { flag:"🇦🇪", name:"العربية (AR)",          url:"https://studio.youtube.com", st:"soon" }
-  },
-  tools: [
-    { n:"Google Vids", d:"AI দিয়ে storyboard→video, Google account-এ", u:"https://workspace.google.com/products/vids/", t:"free", tl:"FREE" },
-    { n:"Kling AI", d:"text/image→video, daily free credits", u:"https://klingai.com", t:"cred", tl:"FREE CREDITS" },
-    { n:"CapCut", d:"সহজ powerful editor (PC/mobile/web)", u:"https://www.capcut.com", t:"free", tl:"FREE" },
-    { n:"Canva Video", d:"template+video builder, বাংলা UI", u:"https://www.canva.com/video/", t:"free", tl:"FREE" },
-    { n:"DaVinci Resolve", d:"Hollywood-grade free editor", u:"https://www.blackmagicdesign.com/products/davinciresolve", t:"free", tl:"FREE" },
-    { n:"Shotcut", d:"open-source offline editor", u:"https://shotcut.org", t:"open", tl:"OPEN SOURCE" },
-    { n:"Pika", d:"AI video generation, free credits", u:"https://pika.art", t:"cred", tl:"FREE CREDITS" },
-    { n:"Runway", d:"Gen-3 AI video, free trial credits", u:"https://runwayml.com", t:"cred", tl:"FREE CREDITS" },
-    { n:"Luma Dream Machine", d:"text→cinematic video", u:"https://lumalabs.ai/dream-machine", t:"cred", tl:"FREE CREDITS" },
-    { n:"ElevenLabs", d:"best AI voice/TTS (নতুন ভাষার narration)", u:"https://elevenlabs.io", t:"cred", tl:"FREE TIER" },
-    { n:"Suno", d:"AI music/song (music bed বিকল্প)", u:"https://suno.com", t:"cred", tl:"FREE CREDITS" },
-    { n:"Pexels / Pixabay", d:"free stock footage (PD clips)", u:"https://www.pexels.com", t:"free", tl:"FREE" }
-  ],
-  cmds: [
-    "git clone https://github.com/MIPolash-Prog/mystic-globe-studio.git",
-    "cd mystic-globe-studio",
-    "pip install pillow numpy static-ffmpeg arabic-reshaper python-bidi",
-    "python fetch_ext.py",
-    "python build_longs.py bn",
-    "python build_dubs.py bn",
-    "python make_packs.py"
-  ]
-};
-/* ============================================================= */
-const cg = document.getElementById('chanGrid');
-for (const [k,c] of Object.entries(CONFIG.channels)) {
-  cg.innerHTML += `<a class="card" href="${c.url}" target="_blank"><div class="t"><span class="flag">${c.flag}</span>${c.name}</div><div class="d">${c.st==='live' ? 'LIVE channel — '+k.toUpperCase() : 'channel তৈরি বাকি — Studio খুলবে'}</div><span class="tag ${c.st==='live'?'':'cred'}">${c.st==='live' ? '✅ LIVE' : '🔜 COMING SOON'}</span></a>`;
+'use strict';
+
+// =============================================================
+// ✅ 182 AI TOOLS DATABASE - FULLY UPDATED 2025
+// =============================================================
+var toolData = [
+    // 1. WEB DEVELOPMENT → 28 tools
+    {cat:'Web Development', id:'webdev', color:'#a78bfa', tools:[
+        ['ChatGPT o3','https://chat.openai.com','Best general purpose coding assistant',true],
+        ['Claude 3.7 Sonnet','https://claude.ai','Best for long code and full projects',true],
+        ['Gemini 2.5 Pro','https://gemini.google.com','Google coding assistant',true],
+        ['Cursor','https://cursor.sh','AI first code editor',true],
+        ['Windsurf','https://codeium.com/windsurf','AI IDE with full codebase understanding',true],
+        ['GitHub Copilot','https://github.com/features/copilot','Inline autocomplete',true],
+        ['Bolt.new','https://bolt.new','Full stack app builder',true],
+        ['V0 by Vercel','https://v0.dev','UI component generator',true],
+        ['Lovable','https://lovable.dev','Build full apps from prompts',true],
+        ['Replit AI','https://replit.com','Cloud code editor',true],
+        ['Codeium','https://codeium.com','Free autocomplete',true],
+        ['Tabnine','https://www.tabnine.com','Team focused code completion',true],
+        ['DeepSeek Coder','https://chat.deepseek.com','Open source coding model',true],
+        ['Framer AI','https://www.framer.com','AI website builder',true],
+        ['Webflow AI','https://webflow.com','No code website builder',true],
+        ['Locofy','https://www.locofy.ai','Figma to code',true],
+        ['Galileo AI','https://www.usegalileo.ai','UI design generator',true],
+        ['DuckDB AI','https://duckdb.org','AI powered database',true],
+        ['Supabase AI','https://supabase.com','AI backend builder',true],
+        ['Prisma AI','https://www.prisma.io','ORM with AI',true],
+        ['StackBlitz','https://stackblitz.com','Online IDE with AI',true],
+        ['GitLab Duo','https://about.gitlab.com/duo','Gitlab AI assistant',true],
+        ['Bitbucket AI','https://bitbucket.org/product/ai','Bitbucket assistant',true],
+        ['Postman AI','https://www.postman.com/ai','API testing AI',true],
+        ['Snyk AI','https://snyk.io/ai','Security scanning AI',true],
+        ['ESLint AI','https://eslint.org','Linting with AI',true],
+        ['Playwright AI','https://playwright.dev/ai','Testing automation',true],
+        ['Vercel AI SDK','https://sdk.vercel.ai','Build your own AI apps',true],
+    ]},
+
+    // 2. SEO → 26 tools
+    {cat:'SEO', id:'seo', color:'#f472b6', tools:[
+        ['Surfer SEO','https://surferseo.com','AI content optimization',false],
+        ['Frase','https://www.frase.io','AI content briefs',false],
+        ['Clearscope','https://www.clearscope.io','AI content grader',false],
+        ['NeuronWriter','https://neuronwriter.com','AI SEO editor',true],
+        ['MarketMuse','https://www.marketmuse.com','AI content strategy',false],
+        ['RankIQ','https://www.rankiq.com','AI for bloggers',false],
+        ['SEMrush AI','https://www.semrush.com','All in one SEO suite',false],
+        ['Ahrefs AI','https://ahrefs.com','Backlink analysis',false],
+        ['Moz AI','https://moz.com','SEO tools',false],
+        ['SEO.ai','https://seo.ai','AI SEO writer',true],
+        ['AlsoAsked','https://alsoasked.com','People also ask maps',true],
+        ['AnswerThePublic','https://answerthepublic.com','Keyword questions',true],
+        ['Diib','https://diib.com','AI growth analytics',true],
+        ['Screaming Frog AI','https://www.screamingfrog.co.uk','Technical crawler',true],
+        ['Keyword Surfer','https://keywordsurfer.com','Free keyword research',true],
+        ['PageSpeed Insights','https://pagespeed.web.dev','Speed analysis',true],
+        ['Google Search Console AI','https://search.google.com/search-console','Google data',true],
+        ['ChatGPT for SEO','https://chat.openai.com','General SEO tasks',true],
+        ['Perplexity SEO','https://www.perplexity.ai','Research and competitors',true],
+        ['Ubersuggest','https://neilpatel.com/ubersuggest','Free SEO tools',true],
+        ['WordRank AI','https://wordrank.ai','Content optimizer',true],
+        ['Copy.ai SEO','https://www.copy.ai','SEO copywriter',true],
+        ['Jasper SEO','https://www.jasper.ai','SEO content writer',false],
+        ['Outranking','https://www.outranking.io','AI SEO platform',false],
+        ['GrowthBar','https://growthbarseo.com','AI SEO tool',true],
+        ['WriterZen','https://writerzen.net','Keyword explorer',true],
+    ]},
+
+    // 3. DIGITAL MARKETING → 32 tools
+    {cat:'Digital Marketing', id:'marketing', color:'#34d399', tools:[
+        ['ChatGPT','https://chat.openai.com','General marketing tasks',true],
+        ['Claude 3','https://claude.ai','Long form marketing content',true],
+        ['Copy.ai','https://www.copy.ai','Marketing copy generator',true],
+        ['Jasper','https://www.jasper.ai','Marketing AI platform',false],
+        ['Writesonic','https://writesonic.com','Blog and content writer',true],
+        ['Anyword','https://anyword.com','Copy performance prediction',true],
+        ['AdCreative.ai','https://www.adcreative.ai','Ad creatives generator',false],
+        ['Canva Magic Studio','https://www.canva.com','Design and writing',true],
+        ['HubSpot AI','https://www.hubspot.com','Marketing automation',false],
+        ['Rytr','https://rytr.me','Cheap writing assistant',true],
+        ['Hypotenuse AI','https://www.hypotenuse.ai','Product descriptions',true],
+        ['Wordtune','https://www.wordtune.com','Rewriter and editor',true],
+        ['Persado','https://www.persado.com','Emotional marketing language',false],
+        ['Smartly.io','https://www.smartly.io','Ad automation',false],
+        ['Mailchimp AI','https://mailchimp.com','Email marketing AI',true],
+        ['Klaviyo AI','https://www.klaviyo.com','Email automation',false],
+        ['ActiveCampaign AI','https://www.activecampaign.com','Marketing automation',false],
+        ['GetResponse AI','https://www.getresponse.com','Email AI',true],
+        ['Buffer AI','https://buffer.com','Social scheduling',true],
+        ['Hootsuite AI','https://www.hootsuite.com','Social management',false],
+        ['Predis.ai','https://predis.ai','Social posts generator',true],
+        ['Flick AI','https://www.flick.social','Hashtag tool',true],
+        ['Ocoya','https://www.ocoya.com','Social automation',true],
+        ['Later AI','https://later.com','Instagram planner',true],
+        ['ManyChat AI','https://manychat.com','Chatbot builder',true],
+        ['Typefully','https://typefully.com','Twitter/X writer',true],
+        ['Brevo AI','https://www.brevo.com','Email and SMS',true],
+        ['Omnisend','https://www.omnisend.com','Ecommerce marketing',true],
+        ['Phrasee','https://phrasee.co','Subject line generator',true],
+        ['Drift AI','https://www.drift.com','Conversational marketing',false],
+        ['Seventh Sense','https://www.theseventhsense.com','Send time optimization',true],
+        ['Optimove','https://www.optimove.com','Customer retention AI',false],
+    ]},
+
+    // 4. VIDEO AI → 26 tools
+    {cat:'Video AI', id:'video', color:'#fb923c', tools:[
+        ['Sora','https://openai.com/sora','OpenAI text to video',true],
+        ['Runway Gen 3','https://runwayml.com','Best video editing AI',false],
+        ['Pika Labs 3.0','https://pika.art','Text to video generator',true],
+        ['Kling AI','https://klingai.com','Best free video generator',true],
+        ['Pictory AI','https://pictory.ai','Text to video',false],
+        ['InVideo AI','https://invideo.io','Video maker',true],
+        ['HeyGen','https://www.heygen.com','Talking avatars',false],
+        ['Synthesia','https://www.synthesia.io','AI avatars',false],
+        ['Vidnoz AI','https://www.vidnoz.com','Free video generator',true],
+        ['Lumen5','https://lumen5.com','Blog to video',true],
+        ['Descript','https://www.descript.com','Video and podcast editor',true],
+        ['CapCut AI','https://www.capcut.com','Free video editor',true],
+        ['Topaz Video AI','https://www.topazlabs.com','Upscaler',false],
+        ['Fliki','https://fliki.ai','Text to video',true],
+        ['Clipchamp AI','https://clipchamp.com','Free browser editor',true],
+        ['Luma Dream Machine','https://lumalabs.ai/dream-machine','Video generator',true],
+        ['Haiper AI','https://haiper.ai','Free text to video',true],
+        ['Veo','https://deepmind.google/technologies/veo/','Google video generation',true],
+        ['Stable Video','https://stability.ai/news/stable-video','Open source video',true],
+        ['Kaiber','https://kaiber.ai','Music video generator',true],
+        ['ElevenLabs Video','https://elevenlabs.io/video','Lip sync AI',true],
+        ['Murf Video','https://murf.ai/video','Voiceover video',true],
+        ['Wonder Dynamics','https://wonderdynamics.com','CGI actor replacement',true],
+        ['Runway Motion Brush','https://runwayml.com','Video inpainting',true],
+        ['Uncrop','https://stablecog.com/uncrop','Extend video borders',true],
+        ['Frame Interpolation','https://filmixer.com','Smooth slow motion',true],
+    ]},
+
+    // 5. AUDIO AI → 20 tools
+    {cat:'Audio AI', id:'audio', color:'#facc15', tools:[
+        ['ElevenLabs','https://elevenlabs.io','Best text to speech',true],
+        ['OpenAI TTS','https://platform.openai.com/docs/guides/text-to-speech','Good quality TTS',true],
+        ['Murf AI','https://murf.ai','Professional voiceover',false],
+        ['Play.ht','https://play.ht','AI voice generation',true],
+        ['Wellsaid Labs','https://wellsaidlabs.com','Natural voices',false],
+        ['Speechify','https://speechify.com','Text reader',true],
+        ['Descript Audio','https://www.descript.com','Podcast editor',true],
+        ['Adobe Podcast','https://podcast.adobe.com','Audio enhancer',true],
+        ['Auphonic','https://auphonic.com','Audio mastering',true],
+        ['Krisp AI','https://krisp.ai','Noise cancellation',true],
+        ['Otter.ai','https://otter.ai','Meeting transcription',true],
+        ['Fireflies.ai','https://fireflies.ai','Meeting notes',true],
+        ['Suno AI','https://suno.com','Generate full songs',true],
+        ['Udio','https://udio.com','Music generation',true],
+        ['Stable Audio','https://stability.ai','Music generation',true],
+        ['Beatoven','https://www.beatoven.ai','Background music',true],
+        ['Epidemic Sound AI','https://www.epidemicsound.com','AI music',false],
+        ['Lalal.ai','https://www.lalal.ai','Stem separator',true],
+        ['Riffusion','https://riffusion.com','Text to music',true],
+        ['AudioCraft','https://audiocraft.metademolab.com','Meta audio AI',true],
+    ]},
+
+    // 6. VIRTUAL ASSISTANT → 24 tools
+    {cat:'Virtual Assistant', id:'va', color:'#60a5fa', tools:[
+        ['Notion AI','https://www.notion.so','All in one workspace',true],
+        ['ChatGPT','https://chat.openai.com','General assistant',true],
+        ['Claude 3','https://claude.ai','Document and email assistant',true],
+        ['Motion','https://www.usemotion.com','AI calendar and tasks',false],
+        ['Reclaim.ai','https://reclaim.ai','Smart time blocking',true],
+        ['Grammarly','https://www.grammarly.com','Writing assistant',true],
+        ['Zapier AI','https://zapier.com','Workflow automation',true],
+        ['Make AI','https://www.make.com','Automation builder',true],
+        ['Taskade AI','https://www.taskade.com','Project manager',true],
+        ['Tome','https://tome.app','Presentation builder',true],
+        ['Beautiful.ai','https://www.beautiful.ai','Slides builder',true],
+        ['Mem.ai','https://mem.ai','Knowledge base',true],
+        ['Calendly AI','https://calendly.com','Scheduling assistant',true],
+        ['ClickUp AI','https://clickup.com','Project management',true],
+        ['Monday.com AI','https://monday.com','Work management',false],
+        ['Bardeen','https://www.bardeen.ai','Browser automation',true],
+        ['Magical','https://getmagical.com','Text expander',true],
+        ['Text Blaze','https://blaze.today','Snippets',true],
+        ['Alfred','https://www.alfredapp.com','Mac productivity',true],
+        ['Raycast AI','https://www.raycast.com','Launcher assistant',true],
+        ['Arc Search','https://arc.net/search','AI browser',true],
+        ['Perplexity','https://www.perplexity.ai','Research assistant',true],
+        ['Reddit Digest AI','https://reddit.com','Content curator',true],
+        ['Feedly AI','https://feedly.com','RSS assistant',true],
+    ]},
+
+    // 7. MEDICAL VIRTUAL ASSISTANT → 14 tools
+    {cat:'Medical VA', id:'medical', color:'#ef4444', tools:[
+        ['Nuance DAX','https://www.nuance.com/healthcare','Clinical documentation',false],
+        ['Suki AI','https://www.suki.ai','Clinical voice assistant',false],
+        ['Nabla Copilot','https://www.nabla.com','Medical scribe',true],
+        ['DeepScribe','https://www.deepscribe.ai','Medical transcription',false],
+        ['Abridge','https://www.abridge.com','Conversation summarizer',true],
+        ['Doximity GPT','https://www.doximity.com','Physician assistant',true],
+        ['Glass Health','https://glass.health','Clinical reasoning',true],
+        ['Freed AI','https://www.freed.ai','Medical scribe',true],
+        ['ChatGPT Medical','https://chat.openai.com','General medical tasks',true],
+        ['Consensus','https://consensus.app','Medical research',true],
+        ['Mendel AI','https://www.mendel.ai','Clinical data extraction',true],
+        ['Regard','https://www.regard.com','Diagnosis support',true],
+        ['Ambience Healthcare','https://www.ambiencehealthcare.com','Clinical assistant',false],
+        ['Med-PaLM','https://deepmind.google/med-palm','Google medical AI',true],
+    ]},
+
+    // 8. DESIGN AI → 20 tools
+    {cat:'Design AI', id:'design', color:'#ec4899', tools:[
+        ['DALL-E 3','https://chat.openai.com','OpenAI image generator',true],
+        ['Midjourney v6','https://www.midjourney.com','Best image generator',false],
+        ['Stable Diffusion 3','https://stability.ai','Open source image gen',true],
+        ['Ideogram AI','https://ideogram.ai','Best text in images',true],
+        ['Leonardo AI','https://leonardo.ai','All purpose design',true],
+        ['Flux','https://blackforestlabs.ai','Latest open model',true],
+        ['Adobe Firefly','https://firefly.adobe.com','Commercial safe images',true],
+        ['Canva AI','https://www.canva.com','Design tools',true],
+        ['Figma AI','https://www.figma.com','Design assistant',true],
+        ['Magnific AI','https://magnific.ai','Upscaler and enhancer',false],
+        ['Topaz Photo AI','https://www.topazlabs.com','Photo enhancer',false],
+        ['Removal AI','https://removal.ai','Background remover',true],
+        ['Cleanup.pictures','https://cleanup.pictures','Remove objects',true],
+        ['Upscale.media','https://upscale.media','Free upscaler',true],
+        ['Palette','https://palette.fm','Recolor images',true],
+        ['Recraft AI','https://www.recraft.ai','Vector and illustration',true],
+        ['Microsoft Designer','https://designer.microsoft.com','Free design tool',true],
+        ['PhotoRoom','https://www.photoroom.com','Product photos',true],
+        ['Runway Image Gen','https://runwayml.com','Image generation',true],
+        ['Pixlr AI','https://pixlr.com','Free photo editor',true],
+    ]},
+
+    // 9. RESEARCH & WRITING → 12 tools
+    {cat:'Research & Writing', id:'research', color:'#a3e635', tools:[
+        ['Perplexity','https://www.perplexity.ai','Best research AI',true],
+        ['Claude 3 Opus','https://claude.ai','Long document analysis',false],
+        ['Gemini Advanced','https://gemini.google.com','Google research',false],
+        ['Consensus','https://consensus.app','Scientific papers',true],
+        ['Semantic Scholar','https://www.semanticscholar.org','Research papers',true],
+        ['Quillbot','https://quillbot.com','Paraphraser',true],
+        ['Grammarly','https://www.grammarly.com','Writing checker',true],
+        ['ProWritingAid','https://prowritingaid.com','Writing assistant',true],
+        ['Litmaps','https://www.litmaps.com','Research maps',true],
+        ['Connected Papers','https://www.connectedpapers.com','Paper explorer',true],
+        ['Zotero AI','https://www.zotero.org','Reference manager',true],
+        ['ChatPDF','https://chatpdf.com','Ask questions to PDF',true],
+    ]}
+];
+
+// Calculate total
+var totalTools = toolData.reduce((sum, cat) => sum + cat.tools.length, 0);
+console.log(`✅ Total tools loaded: ${totalTools}`);
+
+// =============================================================
+
+var welcomeDone = false;
+var currentVoice = localStorage.getItem('lastVoice') || 'female';
+
+function welcomeSequence() {
+    if(welcomeDone) return; welcomeDone = true;
+    music.volume = 0.12;
+    music.play().catch(()=>{});
+    document.getElementById('mp-orb').classList.add('on');
+    document.getElementById('mp-lbl').textContent = '🎵 Welcome';
+
+    currentVoice = currentVoice === 'female' ? 'male' : 'female';
+    localStorage.setItem('lastVoice', currentVoice);
+
+    setTimeout(() => {
+        music.volume = 0.04;
+        speakWelcome(currentVoice, () => {
+            music.volume = 0.20;
+            document.getElementById('mp-lbl').textContent = '🎵 Playing';
+            document.getElementById('mp-ico').innerHTML = '<rect x="5" y="4" width="4" height="16"/><rect x="15" y="4" width="4" height="16"/>';
+        });
+    }, 600);
 }
-const tg = document.getElementById('toolGrid');
-for (const t of CONFIG.tools) {
-  tg.innerHTML += `<a class="card" href="${t.u}" target="_blank"><div class="t">${t.n}</div><div class="d">${t.d}</div><span class="tag ${t.t}">${t.tl}</span></a>`;
+
+function speakWelcome(gender, callback) {
+    if(!window.speechSynthesis) { callback(); return; }
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance();
+    u.text = "Welcome to my portfolio. I am Monjurul Islam Polash, Digital Marketer, Web Developer, SEO Expert and Virtual Assistant. Available 24 hours. Thank you for visiting!";
+    u.lang = 'en-US';
+    u.rate = gender === 'female' ? 0.84 : 0.98;
+    u.pitch = gender === 'female' ? 1.45 : 0.82;
+    var voices = window.speechSynthesis.getVoices();
+    var bestVoice = null;
+    voices.forEach(v => {
+        if(!v.lang.startsWith('en')) return;
+        var name = v.name.toLowerCase();
+        var score = 0;
+        if(gender === 'female') {
+            if(/female|zira|samantha|sonia/.test(name)) score += 100;
+            if(/david|mark/.test(name)) score -= 50;
+        } else {
+            if(/david|mark|james|daniel/.test(name)) score += 100;
+            if(/female|zira/.test(name)) score -= 50;
+        }
+        if(v.localService) score += 30;
+        if(!bestVoice || score > bestVoice.score) bestVoice = {v:v, score:score};
+    });
+    if(bestVoice) u.voice = bestVoice.v;
+    u.onend = callback;
+    u.onerror = callback;
+    window.speechSynthesis.speak(u);
 }
-const langs = [["bn","বাংলা"],["ja","日本語"],["de","Deutsch"],["es","Español"],["nl","Nederlands"],["no","Norsk"],["ar","العربية"],["en","English US"],["enau","English AU"]];
-const cb = document.getElementById('catBody');
-for (const [k,n] of langs) {
-  cb.innerHTML += `<tr><td>${n} <span style="color:var(--dim)">(${k})</span></td><td class="ok">✅ pentagon_us_16x9_${k}.mp4</td><td class="ok">✅ pentagon_us_short_9x16_${k}.mp4</td><td class="ok">✅ ${k}/</td></tr>`;
+
+if(window.speechSynthesis) {
+    window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+    window.speechSynthesis.getVoices();
 }
-const cbox = document.getElementById('cmdBox');
-CONFIG.cmds.forEach(c => {
-  const div = document.createElement('div'); div.className = 'cmd';
-  div.innerHTML = `<span>${c}</span><button>copy</button>`;
-  div.querySelector('button').onclick = () => { navigator.clipboard.writeText(c); div.querySelector('button').textContent = '✓'; setTimeout(()=>div.querySelector('button').textContent='copy',1200); };
-  cbox.appendChild(div);
+
+['click','touchstart','scroll','keydown','mousemove'].forEach(evt => {
+    document.addEventListener(evt, welcomeSequence, { once:true, passive:true });
 });
+
+var music = document.getElementById('bgMusic');
+var playing = false;
+function mpToggle() {
+    if(!playing) {
+        welcomeSequence();
+        music.play();
+        playing = true;
+        document.getElementById('mp-orb').classList.add('on');
+        document.getElementById('mp-lbl').textContent = '🎵 Playing';
+        document.getElementById('mp-ico').innerHTML = '<rect x="5" y="4" width="4" height="16"/><rect x="15" y="4" width="4" height="16"/>';
+    } else {
+        music.pause();
+        playing = false;
+        document.getElementById('mp-orb').classList.remove('on');
+        document.getElementById('mp-lbl').textContent = '🎵 Paused';
+        document.getElementById('mp-ico').innerHTML = '<polygon points="5 3 19 12 5 21 5 3"/>';
+    }
+}
+function mpClose() {
+    music.pause();
+    document.getElementById('mplayer').style.display = 'none';
+}
+
+window.addEventListener('load', function() {
+
+    // Particles
+    var pc=document.getElementById('particles');
+    for(var i=0;i<20;i++){
+        var p=document.createElement('div'); p.className='particle';
+        p.style.cssText='left:'+Math.random()*100+'%;animation-duration:'+(Math.random()*10+10)+'s;animation-delay:'+Math.random()*5+'s;';
+        pc.appendChild(p);
+    }
+
+    // Typing animation
+    var roles = [
+        "Digital Marketing Expert",
+        "Web Developer",
+        "SEO Specialist",
+        "Social Media Marketer",
+        "Virtual Assistant",
+        "AI Tools Expert"
+    ];
+    var ri=0, ci=0, del=false, el=document.getElementById('typed-text');
+    function tick(){
+        var r=roles[ri];
+        el.textContent=del?r.substring(0,ci-1):r.substring(0,ci+1);
+        del?ci--:ci++;
+        if(!del&&ci===r.length){del=true;return setTimeout(tick,2000);}
+        if(del&&ci===0){del=false;ri=(ri+1)%roles.length;return setTimeout(tick,500);}
+        setTimeout(tick,del?50:100);
+    }
+    tick();
+
+    // BD Clock
+    function updateClock(){
+        document.getElementById('bdtDateTime').textContent = new Date().toLocaleString('en-US',{
+            timeZone:'Asia/Dhaka',
+            weekday:'long',
+            year:'numeric',
+            month:'long',
+            day:'numeric',
+            hour:'2-digit',
+            minute:'2-digit',
+            second:'2-digit',
+            hour12:true
+        });
+    }
+    setInterval(updateClock,1000); updateClock();
+
+    // Scroll reveal
+    function revealOnScroll() {
+        document.querySelectorAll('.scroll-reveal').forEach(function(el) {
+            var top = el.getBoundingClientRect().top;
+            if(top < window.innerHeight - 100) el.classList.add('active');
+        });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    // RENDER TOOLKIT
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    function renderTools(filter='all', search='') {
+        var html = '';
+        var shown = 0;
+
+        toolData.forEach(cat => {
+            var catTools = cat.tools.filter(tool => {
+                if(filter !== 'all' && cat.id !== filter) return false;
+                if(search) {
+                    var needle = search.toLowerCase();
+                    return tool[0].toLowerCase().includes(needle) || tool[2].toLowerCase().includes(needle);
+                }
+                return true;
+            });
+
+            if(catTools.length === 0) return;
+
+            html += `<div class="tk-category">${cat.cat}</div>`;
+
+            catTools.forEach(tool => {
+                shown++;
+                html += `<a href="${tool[1]}" target="_blank" class="tool-card" data-cat="${cat.id}">
+                    ${tool[3] ? '<span class="free-badge">🆓 FREE</span>' : ''}
+                    <div class="font-bold">${tool[0]}</div>
+                    <div class="text-xs text-gray-400 mt-1">${tool[2]}</div>
+                </a>`;
+            });
+        });
+
+        document.getElementById('tools-wrap').innerHTML = html;
+        document.getElementById('count-shown').textContent = shown;
+    }
+
+    renderTools();
+
+    // Tabs handler
+    document.querySelectorAll('.tk-tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+            document.querySelectorAll('.tk-tab').forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            var filter = this.dataset.filter;
+            document.getElementById('tool-search').value = '';
+            renderTools(filter);
+        });
+    });
+
+    // Search handler
+    document.getElementById('tool-search').addEventListener('input', function(e) {
+        var activeTab = document.querySelector('.tk-tab.active').dataset.filter;
+        renderTools(activeTab, e.target.value);
+    });
+
+});
+
 </script>
+
+<script>
+
+/* ===== PART 1: EXTRA AI TOOLS DATA (free / freemium) ===== */
+var extraTools = [
+  {cat:'Web Development', id:'webdev', color:'#a78bfa', tools:[
+    ['Netlify','https://www.netlify.com','Deploy sites with free hosting'],
+    ['Vercel','https://vercel.com','Frontend hosting and deploys'],
+    ['Cloudflare','https://www.cloudflare.com','Free CDN, DNS and security'],
+    ['Firebase Studio','https://firebase.studio','Build full apps with AI in browser'],
+    ['Google AI Studio','https://aistudio.google.com','Free Gemini playground and API'],
+    ['Hugging Face','https://huggingface.co','Open source AI models'],
+    ['Ollama','https://ollama.com','Run AI models locally'],
+    ['Continue','https://www.continue.dev','Open source AI code assistant'],
+    ['Cline','https://cline.bot','AI coding agent for VS Code'],
+    ['Qodo','https://www.qodo.ai','AI code testing and review'],
+    ['Amazon Q Developer','https://aws.amazon.com/q/developer/','AWS coding assistant']
+  ]},
+  {cat:'SEO', id:'seo', color:'#f472b6', tools:[
+    ['Google Trends','https://trends.google.com','Search trend explorer'],
+    ['Google Keyword Planner','https://ads.google.com/home/tools/keyword-planner/','Keyword ideas from Google'],
+    ['Rank Math','https://rankmath.com','WordPress SEO plugin'],
+    ['Yoast SEO','https://yoast.com','WordPress SEO plugin'],
+    ['Ahrefs Webmaster Tools','https://ahrefs.com/webmaster-tools','Free site audit and backlinks'],
+    ['Bing Webmaster Tools','https://www.bing.com/webmasters','Bing search data'],
+    ['Seobility','https://www.seobility.net','Free SEO checker'],
+    ['Mangools','https://mangools.com','Simple keyword research'],
+    ['SE Ranking','https://seranking.com','Rank tracking and audits']
+  ]},
+  {cat:'Digital Marketing', id:'marketing', color:'#34d399', tools:[
+    ['Google Ads','https://ads.google.com','Search and display ads'],
+    ['Meta Ads Manager','https://www.facebook.com/business/tools/ads-manager','Facebook and Instagram ads'],
+    ['MailerLite','https://www.mailerlite.com','Easy email marketing'],
+    ['Sender','https://www.sender.net','Email and SMS marketing'],
+    ['Beehiiv','https://www.beehiiv.com','Newsletter platform'],
+    ['Hunter','https://hunter.io','Find business emails'],
+    ['Apollo','https://www.apollo.io','Lead database and outreach']
+  ]},
+  {cat:'Video AI', id:'video', color:'#fb923c', tools:[
+    ['Hailuo AI','https://hailuoai.video','Free text to video generator'],
+    ['Genmo','https://www.genmo.ai','Free AI video generator'],
+    ['VEED','https://www.veed.io','Online video editor with AI tools'],
+    ['Opus Clip','https://www.opus.pro','Long video to viral shorts'],
+    ['Kapwing','https://www.kapwing.com','Browser video editor with AI'],
+    ['DaVinci Resolve','https://www.blackmagicdesign.com/products/davinciresolve','Free pro editor with AI features'],
+    ['Filmora','https://filmora.wondershare.com','Easy editor with AI tools'],
+    ['Vizard','https://vizard.ai','AI video clipping tool'],
+    ['Google Veo','https://deepmind.google/models/veo/','Google text to video model'],
+    ['Pollo AI','https://pollo.ai','Multi model video generator']
+  ]},
+  {cat:'Audio AI', id:'audio', color:'#38bdf8', tools:[
+    ['ElevenLabs','https://elevenlabs.io','Realistic AI voices and voice cloning'],
+    ['Suno','https://suno.com','AI song and music generator'],
+    ['Udio','https://www.udio.com','AI music creation'],
+    ['Murf AI','https://murf.ai','Studio quality AI voiceovers'],
+    ['Speechify','https://speechify.com','Text to speech reader'],
+    ['Otter.ai','https://otter.ai','Meeting transcription and notes'],
+    ['Whisper','https://openai.com/research/whisper','Open source speech recognition'],
+    ['Adobe Podcast','https://podcast.adobe.com','Enhance speech and remove noise'],
+    ['Auphonic','https://auphonic.com','Automatic audio post production'],
+    ['LALAL.AI','https://www.lalal.ai','Vocal and stem splitter'],
+    ['Audacity','https://www.audacityteam.org','Free audio editor'],
+    ['PlayHT','https://play.ht','AI voice generator'],
+    ['Fireflies.ai','https://fireflies.ai','AI meeting recorder'],
+    ['Krisp','https://krisp.ai','Noise cancelling for calls'],
+    ['Podcastle','https://podcastle.ai','Podcast recording and editing'],
+    ['Soundraw','https://soundraw.io','AI royalty free music'],
+    ['Mubert','https://mubert.com','AI generated music'],
+    ['NaturalReader','https://www.naturalreaders.com','Text to speech reader']
+  ]},
+  {cat:'Virtual Assistant', id:'va', color:'#fbbf24', tools:[
+    ['Notion AI','https://www.notion.so/product/ai','Notes, docs and tasks with AI'],
+    ['Grammarly','https://www.grammarly.com','Writing and grammar assistant'],
+    ['Zapier','https://zapier.com','Automate work between apps'],
+    ['Make','https://www.make.com','Visual workflow automation'],
+    ['Calendly','https://calendly.com','Meeting scheduling'],
+    ['Todoist','https://todoist.com','Task manager'],
+    ['Trello','https://trello.com','Kanban project boards'],
+    ['Microsoft Copilot','https://copilot.microsoft.com','Free AI assistant from Microsoft'],
+    ['Reclaim.ai','https://reclaim.ai','AI calendar planner'],
+    ['Clockify','https://clockify.me','Free time tracker'],
+    ['Loom','https://www.loom.com','Quick screen recording'],
+    ['Tidio','https://www.tidio.com','Live chat and AI chatbot'],
+    ['Taskade','https://www.taskade.com','AI tasks and notes workspace'],
+    ['ClickUp','https://clickup.com','Project management with AI'],
+    ['ChatGPT','https://chatgpt.com','General AI assistant'],
+    ['Gemini','https://gemini.google.com','Google AI assistant'],
+    ['Grok','https://x.com/i/grok','AI assistant from xAI'],
+    ['DeepSeek','https://chat.deepseek.com','Free AI chat and coding'],
+    ['Meta AI','https://meta.ai','Free AI assistant from Meta']
+  ]},
+  {cat:'Medical VA', id:'medical', color:'#f87171', tools:[
+    ['OpenEvidence','https://www.openevidence.com','Medical evidence search for clinicians'],
+    ['Doximity GPT','https://www.doximity.com','Clinical assistant for doctors'],
+    ['Glass Health','https://glass.health','Clinical decision support'],
+    ['Ada Health','https://ada.com','Symptom assessment'],
+    ['PubMed','https://pubmed.ncbi.nlm.nih.gov','Free medical literature database'],
+    ['Medscape','https://www.medscape.com','Medical news and references'],
+    ['Heidi Health','https://www.heidihealth.com','AI medical scribe'],
+    ['Nabla','https://www.nabla.com','Ambient AI clinical notes'],
+    ['Epocrates','https://www.epocrates.com','Drug reference'],
+    ['Drugs.com','https://www.drugs.com','Drug information and interactions'],
+    ['ClinicalTrials.gov','https://clinicaltrials.gov','Clinical trial database'],
+    ['MedlinePlus','https://medlineplus.gov','Trusted health information'],
+    ['WebMD','https://www.webmd.com','Health information'],
+    ['Mayo Clinic','https://www.mayoclinic.org','Disease and drug reference'],
+    ['CDC','https://www.cdc.gov','Public health guidelines'],
+    ['WHO','https://www.who.int','Global health information'],
+    ['Jotform','https://www.jotform.com','Online forms for clinics']
+  ]},
+  {cat:'Design AI', id:'design', color:'#e879f9', tools:[
+    ['Figma AI','https://www.figma.com','Design tool with AI features'],
+    ['Adobe Firefly','https://firefly.adobe.com','Generative image and text effects'],
+    ['Leonardo AI','https://leonardo.ai','AI image generation'],
+    ['Ideogram','https://ideogram.ai','Images with accurate text'],
+    ['Microsoft Designer','https://designer.microsoft.com','Free AI graphic design'],
+    ['Playground','https://playground.com','AI image creator and editor'],
+    ['Craiyon','https://www.craiyon.com','Free AI image generator'],
+    ['Remove.bg','https://www.remove.bg','Background remover'],
+    ['Photopea','https://www.photopea.com','Free browser photo editor'],
+    ['Krea','https://www.krea.ai','Real time AI image tools'],
+    ['Looka','https://looka.com','AI logo maker'],
+    ['Uizard','https://uizard.io','Prototype app screens with AI'],
+    ['Recraft','https://www.recraft.ai','Vector and brand graphics'],
+    ['Clipdrop','https://clipdrop.co','Image editing AI tools'],
+    ['Pixlr','https://pixlr.com','Online photo editor with AI'],
+    ['Gamma','https://gamma.app','AI presentations and pages'],
+    ['Canva','https://www.canva.com','Easy design with Magic Studio'],
+    ['Bing Image Creator','https://www.bing.com/images/create','Free AI image generator'],
+    ['Adobe Express','https://www.adobe.com/express/','Quick graphics with AI'],
+    ['Photoroom','https://www.photoroom.com','Product photo editing'],
+    ['Upscayl','https://upscayl.org','Free AI image upscaler']
+  ]},
+  {cat:'Research', id:'research', color:'#2dd4bf', tools:[
+    ['Consensus','https://consensus.app','Answers from scientific papers'],
+    ['Elicit','https://elicit.com','AI research assistant'],
+    ['Scite','https://scite.ai','Smart citation checker'],
+    ['Semantic Scholar','https://www.semanticscholar.org','AI academic search'],
+    ['Google Scholar','https://scholar.google.com','Scholarly literature search'],
+    ['NotebookLM','https://notebooklm.google','Chat with your documents'],
+    ['Scholarcy','https://www.scholarcy.com','Summarize research papers'],
+    ['ResearchRabbit','https://www.researchrabbit.ai','Discover related papers'],
+    ['Connected Papers','https://www.connectedpapers.com','Visual map of papers'],
+    ['SciSpace','https://scispace.com','Explain and find papers'],
+    ['Litmaps','https://www.litmaps.com','Literature mapping'],
+    ['Zotero','https://www.zotero.org','Free reference manager'],
+    ['Wolfram Alpha','https://www.wolframalpha.com','Computational knowledge engine'],
+    ['You.com','https://you.com','AI search engine'],
+    ['Perplexity','https://www.perplexity.ai','AI answer engine with sources']
+  ]},
+  {cat:'Social Media', id:'social', color:'#60a5fa', tools:[
+    ['Metricool','https://metricool.com','Social scheduling and analytics'],
+    ['Publer','https://publer.com','Schedule posts across platforms'],
+    ['SocialBee','https://socialbee.com','Social content planner'],
+    ['Planable','https://planable.io','Content approval and planning'],
+    ['Vista Social','https://vistasocial.com','Social management with AI'],
+    ['Zoho Social','https://www.zoho.com/social','Social media management'],
+    ['Linktree','https://linktr.ee','Link in bio page'],
+    ['Bitly','https://bitly.com','Short links and QR codes'],
+    ['Missinglettr','https://missinglettr.com','Turn blogs into social posts'],
+    ['Repurpose.io','https://repurpose.io','Auto repost videos'],
+    ['ContentStudio','https://contentstudio.io','Content discovery and publishing'],
+    ['Taplio','https://taplio.com','LinkedIn growth tool']
+  ]},
+  {cat:'Writing & Content', id:'writing', color:'#4ade80', tools:[
+    ['QuillBot','https://quillbot.com','Paraphraser and summarizer'],
+    ['Hemingway Editor','https://hemingwayapp.com','Make writing clear'],
+    ['LanguageTool','https://languagetool.org','Grammar and style checker'],
+    ['GPTZero','https://gptzero.me','AI content detector'],
+    ['ZeroGPT','https://www.zerogpt.com','AI text detector'],
+    ['ProWritingAid','https://prowritingaid.com','Writing editor'],
+    ['TextCortex','https://textcortex.com','AI writing assistant'],
+    ['Smodin','https://smodin.io','Writer, rewriter and checker'],
+    ['Jenni AI','https://jenni.ai','AI essay and research writer'],
+    ['Writer','https://writer.com','Business writing AI'],
+    ['Scribbr','https://www.scribbr.com','Plagiarism and citation tools']
+  ]},
+  {cat:'Freelance & Business', id:'business', color:'#fcd34d', tools:[
+    ['Upwork','https://www.upwork.com','Largest freelance marketplace','Freelance Marketplaces','EARN'],
+    ['Fiverr','https://www.fiverr.com','Sell gigs to global clients','Freelance Marketplaces','EARN'],
+    ['Freelancer.com','https://www.freelancer.com','Bid on projects and contests','Freelance Marketplaces','EARN'],
+    ['PeoplePerHour','https://www.peopleperhour.com','Hourly and fixed price projects','Freelance Marketplaces','EARN'],
+    ['Guru','https://www.guru.com','Freelance jobs and workrooms','Freelance Marketplaces','EARN'],
+    ['Toptal','https://www.toptal.com','Top talent network, screened','Freelance Marketplaces','EARN'],
+    ['99designs','https://99designs.com','Design contests and projects','Freelance Marketplaces','EARN'],
+    ['Contra','https://contra.com','Commission free freelance work','Freelance Marketplaces','EARN'],
+    ['Truelancer','https://www.truelancer.com','Freelance jobs for South Asia','Freelance Marketplaces','EARN'],
+    ['Workana','https://www.workana.com','Latin America freelance market','Freelance Marketplaces','EARN'],
+    ['Codeable','https://codeable.io','WordPress expert marketplace','Freelance Marketplaces','EARN'],
+    ['Arc','https://arc.dev','Remote developer jobs','Freelance Marketplaces','EARN'],
+    ['We Work Remotely','https://weworkremotely.com','Remote job board','Remote Jobs','EARN'],
+    ['Remote OK','https://remoteok.com','Remote jobs worldwide','Remote Jobs','EARN'],
+    ['Remotive','https://remotive.com','Curated remote jobs','Remote Jobs','EARN'],
+    ['Working Nomads','https://www.workingnomads.com','Remote jobs for nomads','Remote Jobs','EARN'],
+    ['LinkedIn Jobs','https://www.linkedin.com/jobs/','Job search and applications','Remote Jobs','EARN'],
+    ['Wellfound','https://wellfound.com','Startup jobs and freelance','Remote Jobs','EARN'],
+    ['Preply','https://preply.com/en/teach/','Teach languages and subjects online','Online Teaching Marketplaces','EARN'],
+    ['Cambly','https://www.cambly.com','Teach English by chat','Online Teaching Marketplaces','EARN'],
+    ['italki','https://www.italki.com','Language teacher marketplace','Online Teaching Marketplaces','EARN'],
+    ['Wyzant','https://www.wyzant.com','Tutoring marketplace','Online Teaching Marketplaces','EARN'],
+    ['Superprof','https://www.superprof.com','Find students for private lessons','Online Teaching Marketplaces','EARN'],
+    ['Amazon Mechanical Turk','https://www.mturk.com','Small online tasks for pay','Micro Tasks & Paid Research','EARN'],
+    ['Clickworker','https://www.clickworker.com','Micro jobs and data tasks','Micro Tasks & Paid Research','EARN'],
+    ['Prolific','https://www.prolific.com','Paid research studies','Micro Tasks & Paid Research','EARN'],
+    ['UserTesting','https://www.usertesting.com','Get paid to test websites','Micro Tasks & Paid Research','EARN'],
+    ['Gumroad','https://gumroad.com','Sell ebooks, templates and courses','Sell Digital Products','EARN'],
+    ['Payhip','https://payhip.com','Sell digital downloads','Sell Digital Products','EARN'],
+    ['Etsy','https://www.etsy.com','Sell digital printables','Sell Digital Products','EARN'],
+    ['Lemon Squeezy','https://www.lemonsqueezy.com','Sell software and digital goods','Sell Digital Products','EARN'],
+    ['ThemeForest','https://themeforest.net','Sell website themes','Sell Digital Products','EARN'],
+    ['Creative Market','https://creativemarket.com','Sell design assets','Sell Digital Products','EARN'],
+    ['Shutterstock Contributor','https://submit.shutterstock.com','Sell photos and videos','Sell Digital Products','EARN'],
+    ['Adobe Stock Contributor','https://contributor.stock.adobe.com','Sell stock content','Sell Digital Products','EARN'],
+    ['Amazon Associates','https://affiliate-program.amazon.com','Earn commission on products','Affiliate Programs','EARN'],
+    ['ShareASale','https://www.shareasale.com','Affiliate network','Affiliate Programs','EARN'],
+    ['Impact','https://impact.com','Partnership and affiliate platform','Affiliate Programs','EARN'],
+    ['ClickBank','https://www.clickbank.com','Digital product affiliates','Affiliate Programs','EARN'],
+    ['CJ Affiliate','https://www.cj.com','Large affiliate network','Affiliate Programs','EARN'],
+    ['PartnerStack','https://partnerstack.com','SaaS affiliate programs','Affiliate Programs','EARN'],
+    ['Behance','https://www.behance.net','Creative portfolio','Portfolio & Branding'],
+    ['Dribbble','https://dribbble.com','Design portfolio and jobs','Portfolio & Branding'],
+    ['LinkedIn','https://www.linkedin.com','Professional profile and leads','Portfolio & Branding'],
+    ['GitHub','https://github.com','Code portfolio and hosting','Portfolio & Branding'],
+    ['Carrd','https://carrd.co','Simple one page website','Portfolio & Branding'],
+    ['Wave','https://www.waveapps.com','Free invoicing and accounting','Invoicing & Payments'],
+    ['Bonsai','https://www.hellobonsai.com','Contracts and invoices for freelancers','Invoicing & Payments','none'],
+    ['Payoneer','https://www.payoneer.com','Receive client payments','Invoicing & Payments','none'],
+    ['Wise','https://wise.com','Low cost money transfer','Invoicing & Payments','none'],
+    ['PayPal','https://www.paypal.com','Online payments','Invoicing & Payments','none'],
+    ['Stripe','https://stripe.com','Accept card payments','Invoicing & Payments','none'],
+    ['PandaDoc','https://www.pandadoc.com','Proposals and e-signatures','Contracts & Proposals','none'],
+    ['DocuSign','https://www.docusign.com','Electronic signatures','Contracts & Proposals','none'],
+    ['Dropbox Sign','https://sign.dropbox.com','Simple e-signatures','Contracts & Proposals','none'],
+    ['Better Proposals','https://betterproposals.io','Client proposal templates','Contracts & Proposals','none'],
+    ['Pitch','https://pitch.com','Presentations and proposals','Contracts & Proposals'],
+    ['Toggl Track','https://toggl.com/track','Time tracking','Time & Projects'],
+    ['Hubstaff','https://hubstaff.com','Time tracking and monitoring','Time & Projects','none'],
+    ['Clockify','https://clockify.me','Free time tracker','Time & Projects'],
+    ['Google Analytics','https://analytics.google.com','Website traffic analytics','Analytics & Reporting'],
+    ['Looker Studio','https://lookerstudio.google.com','Free reporting dashboards','Analytics & Reporting'],
+    ['Microsoft Clarity','https://clarity.microsoft.com','Free heatmaps and recordings','Analytics & Reporting'],
+    ['Hotjar','https://www.hotjar.com','User behavior insights','Analytics & Reporting'],
+    ['Google Tag Manager','https://tagmanager.google.com','Manage tracking tags','Analytics & Reporting'],
+    ['Zoom','https://zoom.us','Client video meetings','Meetings & Forms'],
+    ['Google Meet','https://meet.google.com','Free video meetings','Meetings & Forms'],
+    ['Calendly','https://calendly.com','Book client calls','Meetings & Forms'],
+    ['Loom','https://www.loom.com','Quick screen recording','Meetings & Forms'],
+    ['Typeform','https://www.typeform.com','Forms and surveys','Meetings & Forms'],
+    ['Tally','https://tally.so','Free form builder','Meetings & Forms'],
+    ['Coursera','https://www.coursera.org','Online courses and certificates','Skills & Learning','none'],
+    ['edX','https://www.edx.org','University courses','Skills & Learning','none'],
+    ['freeCodeCamp','https://www.freecodecamp.org','Free coding lessons','Skills & Learning'],
+    ['Google Skillshop','https://skillshop.withgoogle.com','Free Google certifications','Skills & Learning'],
+    ['HubSpot Academy','https://academy.hubspot.com','Free marketing courses','Skills & Learning'],
+    ['Udemy','https://www.udemy.com','Low cost video courses','Skills & Learning','none']
+  ]},
+  {cat:'YouTube Channel', id:'youtube', color:'#ef4444', tools:[
+    ['ChatGPT','https://chatgpt.com','Documentary scripts and ideas','Script & Research'],
+    ['Claude','https://claude.ai','Long form script writing','Script & Research'],
+    ['Gemini','https://gemini.google.com','Research and script drafts','Script & Research'],
+    ['Perplexity','https://www.perplexity.ai','Fact check with sources','Script & Research'],
+    ['NotebookLM','https://notebooklm.google','Turn sources into script notes','Script & Research'],
+    ['YouTube Studio','https://studio.youtube.com','Manage channel and analytics','Channel Growth'],
+    ['vidIQ','https://vidiq.com','Keywords and video ideas','Channel Growth'],
+    ['TubeBuddy','https://www.tubebuddy.com','YouTube SEO and tags','Channel Growth'],
+    ['Social Blade','https://socialblade.com','Channel growth stats','Channel Growth'],
+    ['Google Trends','https://trends.google.com','Find trending topics','Channel Growth'],
+    ['Google AdSense','https://www.google.com/adsense','Monetization for channels','Channel Growth'],
+    ['CapCut','https://www.capcut.com','Shorts and reels editing','Editing & Shorts'],
+    ['DaVinci Resolve','https://www.blackmagicdesign.com/products/davinciresolve','Cinematic long form editing','Editing & Shorts'],
+    ['Kapwing','https://www.kapwing.com','Quick edits and subtitles','Editing & Shorts'],
+    ['Descript','https://www.descript.com','Edit video by editing text','Editing & Shorts'],
+    ['Opus Clip','https://www.opus.pro','Long video to shorts','Editing & Shorts'],
+    ['Vizard','https://vizard.ai','Auto clips for shorts','Editing & Shorts'],
+    ['Submagic','https://www.submagic.co','Animated captions for shorts','Editing & Shorts'],
+    ['Captions','https://www.captions.ai','AI captions and edits','Editing & Shorts'],
+    ['Runway','https://runwayml.com','AI video generation','AI Video'],
+    ['Kling AI','https://klingai.com','Free AI video clips','AI Video'],
+    ['Luma Dream Machine','https://lumalabs.ai/dream-machine','Cinematic AI video','AI Video'],
+    ['Google Veo','https://deepmind.google/models/veo/','Text to video from Google','AI Video'],
+    ['Hailuo AI','https://hailuoai.video','Free AI video generator','AI Video'],
+    ['Pika','https://pika.art','Text and image to video','AI Video'],
+    ['ElevenLabs','https://elevenlabs.io','Voiceover and dubbing in many languages','Voice, Dubbing & Translation'],
+    ['Rask AI','https://www.rask.ai','Translate and dub videos','Voice, Dubbing & Translation'],
+    ['HeyGen','https://www.heygen.com','Video translation with lip sync','Voice, Dubbing & Translation'],
+    ['DeepL','https://www.deepl.com','Accurate script translation','Voice, Dubbing & Translation'],
+    ['Google Translate','https://translate.google.com','Quick translation','Voice, Dubbing & Translation'],
+    ['Happy Scribe','https://www.happyscribe.com','Subtitles and transcripts','Voice, Dubbing & Translation'],
+    ['Pexels','https://www.pexels.com','Free stock videos','Free Footage'],
+    ['Pixabay','https://pixabay.com','Free videos and music','Free Footage'],
+    ['Coverr','https://coverr.co','Free stock footage','Free Footage'],
+    ['Mixkit','https://mixkit.co','Free clips and music','Free Footage'],
+    ['NASA Image Library','https://images.nasa.gov','Public space footage','Free Footage'],
+    ['Internet Archive','https://archive.org','Public domain footage','Free Footage'],
+    ['Wikimedia Commons','https://commons.wikimedia.org','Free media files','Free Footage'],
+    ['YouTube Audio Library','https://www.youtube.com/audiolibrary','Free safe music','Music & Ambient Sound'],
+    ['Suno','https://suno.com','Make background music','Music & Ambient Sound'],
+    ['Mubert','https://mubert.com','Ambient music generator','Music & Ambient Sound'],
+    ['Freesound','https://freesound.org','Free sound effects','Music & Ambient Sound'],
+    ['myNoise','https://mynoise.net','Ocean and ambient sounds','Music & Ambient Sound'],
+    ['Ambient Mixer','https://www.ambient-mixer.com','Mix ambient soundscapes','Music & Ambient Sound'],
+    ['Canva','https://www.canva.com','Thumbnails and channel art','Thumbnails'],
+    ['Photopea','https://www.photopea.com','Free thumbnail editor','Thumbnails'],
+    ['Leonardo AI','https://leonardo.ai','Thumbnail and scene images','Thumbnails'],
+    ['Ideogram','https://ideogram.ai','Thumbnails with clear text','Thumbnails']
+  ]},
+  {cat:'Teaching', id:'teaching', color:'#22d3ee', tools:[
+    ['MagicSchool','https://www.magicschool.ai','AI lesson plans and teacher tools','Lesson Planning'],
+    ['Eduaide','https://www.eduaide.ai','Lesson and resource generator','Lesson Planning'],
+    ['Curipod','https://curipod.com','Interactive AI lessons in minutes','Lesson Planning'],
+    ['Diffit','https://web.diffit.me','Adapt any text to reading level','Lesson Planning'],
+    ['Khanmigo','https://www.khanmigo.ai','AI tutor and teaching assistant','Lesson Planning'],
+    ['Brisk Teaching','https://www.briskteaching.com','AI tools inside Google Docs and Slides','Lesson Planning'],
+    ['ChatGPT','https://chatgpt.com','Lesson ideas and explanations','Lesson Planning'],
+    ['NotebookLM','https://notebooklm.google','Study guides from your materials','Lesson Planning'],
+    ['Kahoot','https://kahoot.com','Game based quizzes','Quizzes & Assessment'],
+    ['Quizizz','https://quizizz.com','Quizzes with instant feedback','Quizzes & Assessment'],
+    ['Quizlet','https://quizlet.com','Flashcards and practice tests','Quizzes & Assessment'],
+    ['Wooclap','https://www.wooclap.com','Live polls and quizzes','Quizzes & Assessment'],
+    ['Mentimeter','https://www.mentimeter.com','Live polls and word clouds','Quizzes & Assessment'],
+    ['Formative','https://www.formative.com','Real time student assessment','Quizzes & Assessment'],
+    ['Google Forms','https://forms.google.com','Free quizzes and surveys','Quizzes & Assessment'],
+    ['Canva for Education','https://www.canva.com/education/','Free design tools for teachers','Slides & Interactive Lessons'],
+    ['Pear Deck','https://www.peardeck.com','Interactive slides','Slides & Interactive Lessons'],
+    ['Genially','https://genial.ly','Interactive presentations','Slides & Interactive Lessons'],
+    ['Nearpod','https://nearpod.com','Interactive lessons and videos','Slides & Interactive Lessons'],
+    ['Padlet','https://padlet.com','Shared boards for class','Slides & Interactive Lessons'],
+    ['Edpuzzle','https://edpuzzle.com','Questions inside videos','Slides & Interactive Lessons'],
+    ['Gradescope','https://www.gradescope.com','Faster grading of exams','Grading & Feedback'],
+    ['CoGrader','https://cograder.com','AI essay grading','Grading & Feedback','none'],
+    ['Class Companion','https://classcompanion.com','AI writing feedback','Grading & Feedback'],
+    ['Turnitin','https://www.turnitin.com','Plagiarism and similarity check','Grading & Feedback','none'],
+    ['Google Classroom','https://classroom.google.com','Free class workspace','Classroom Management'],
+    ['ClassDojo','https://www.classdojo.com','Class and parent communication','Classroom Management'],
+    ['Seesaw','https://web.seesaw.me','Student portfolios','Classroom Management'],
+    ['Remind','https://www.remind.com','Message students and parents','Classroom Management'],
+    ['Moodle','https://moodle.org','Open source learning platform','Classroom Management'],
+    ['Google Meet','https://meet.google.com','Online classes','Classroom Management'],
+    ['Microsoft Teams for Education','https://www.microsoft.com/en-us/education','Classes and assignments','Classroom Management'],
+    ['Immersive Reader','https://learningtools.onenote.com','Read aloud and reading support','Accessibility & Language'],
+    ['Duolingo','https://www.duolingo.com','Language learning','Accessibility & Language'],
+    ['Speechify','https://speechify.com','Text to speech for learners','Accessibility & Language'],
+    ['Google Translate','https://translate.google.com','Translate class material','Accessibility & Language'],
+    ['Khan Academy','https://www.khanacademy.org','Free lessons and practice','Subject Tools'],
+    ['Desmos','https://www.desmos.com','Free graphing calculator','Subject Tools'],
+    ['GeoGebra','https://www.geogebra.org','Math visual tools','Subject Tools'],
+    ['PhET Simulations','https://phet.colorado.edu','Free science simulations','Subject Tools'],
+    ['Photomath','https://photomath.com','Step by step math help','Subject Tools'],
+    ['Wolfram Alpha','https://www.wolframalpha.com','Solve math and science problems','Subject Tools'],
+    ['Teachable','https://teachable.com','Sell and host online courses','Online Courses','none'],
+    ['Thinkific','https://www.thinkific.com','Build online courses','Online Courses','none'],
+    ['Udemy Instructor','https://www.udemy.com/teaching/','Publish courses to students','Online Courses','EARN'],
+    ['OBS Studio','https://obsproject.com','Free screen and lesson recording','Online Courses'],
+    ['Zoom','https://zoom.us','Live online classes','Online Courses','none']
+  ]},
+  {cat:'Jobs & Work Abroad', id:'jobs', color:'#a3e635', tools:[
+    ['Indeed','https://www.indeed.com','World largest job search site','Global Job Sites','EARN'],
+    ['Glassdoor','https://www.glassdoor.com','Jobs, salaries and company reviews','Global Job Sites','EARN'],
+    ['Monster','https://www.monster.com','Job search and career advice','Global Job Sites','EARN'],
+    ['Jooble','https://jooble.org','Jobs from many countries in one place','Global Job Sites','EARN'],
+    ['Adzuna','https://www.adzuna.com','Job search with salary data','Global Job Sites','EARN'],
+    ['ZipRecruiter','https://www.ziprecruiter.com','Apply to jobs in one click','Global Job Sites','EARN'],
+    ['SimplyHired','https://www.simplyhired.com','Job search engine','Global Job Sites','EARN'],
+    ['Talent.com','https://www.talent.com','Jobs across many countries','Global Job Sites','EARN'],
+    ['BDJobs','https://www.bdjobs.com','Biggest job site in Bangladesh','Bangladesh Jobs','EARN'],
+    ['Chakri.com','https://www.chakri.com','Bangladesh job portal','Bangladesh Jobs','EARN'],
+    ['Skill Jobs','https://skill.jobs','Jobs and skill development','Bangladesh Jobs','EARN'],
+    ['Shomvob','https://shomvob.co','Jobs for skilled workers','Bangladesh Jobs','EARN'],
+    ['Careerjet Bangladesh','https://www.careerjet.com.bd','Job search engine for Bangladesh','Bangladesh Jobs','EARN'],
+    ['Teletalk Govt Jobs','https://alljobs.teletalk.com.bd','Government job applications','Bangladesh Jobs','EARN'],
+    ['Bayt Kuwait','https://www.bayt.com/en/kuwait/jobs/','Top Gulf job site, Kuwait jobs','Kuwait','EARN'],
+    ['Indeed Kuwait','https://kw.indeed.com','Job search in Kuwait','Kuwait','EARN'],
+    ['Naukrigulf Kuwait','https://www.naukrigulf.com','Gulf jobs portal','Kuwait','EARN'],
+    ['GulfTalent','https://www.gulftalent.com','Professional jobs in the Gulf','Kuwait','EARN'],
+    ['Kuwait e-Visa','https://evisa.moi.gov.kw','Official visa portal','Kuwait','INFO'],
+    ['Bayt Qatar','https://www.bayt.com/en/qatar/jobs/','Qatar jobs on Bayt','Qatar','EARN'],
+    ['Indeed Qatar','https://qa.indeed.com','Job search in Qatar','Qatar','EARN'],
+    ['Qatar Living Jobs','https://www.qatarliving.com/jobs','Local Qatar job listings','Qatar','EARN'],
+    ['Qatar Airways Careers','https://careers.qatarairways.com','Airline and aviation careers','Qatar','EARN'],
+    ['Hukoomi','https://hukoomi.gov.qa','Official Qatar government portal','Qatar','INFO'],
+    ['Bayt Saudi Arabia','https://www.bayt.com/en/saudi-arabia/jobs/','Saudi jobs on Bayt','Saudi Arabia','EARN'],
+    ['Indeed Saudi Arabia','https://sa.indeed.com','Job search in Saudi Arabia','Saudi Arabia','EARN'],
+    ['Jadarat','https://jadarat.sa','National employment platform','Saudi Arabia','INFO'],
+    ['Qiwa','https://www.qiwa.sa','Labor services and work contracts','Saudi Arabia','INFO'],
+    ['Naukrigulf','https://www.naukrigulf.com/saudi-arabia-jobs','Saudi jobs on Naukrigulf','Saudi Arabia','EARN'],
+    ['Nabbesh','https://nabbesh.com','Freelance marketplace for MENA','Middle East Freelance','EARN'],
+    ['Mostaql','https://mostaql.com','Arabic freelance marketplace','Middle East Freelance','EARN'],
+    ['Khamsat','https://khamsat.com','Arabic micro services marketplace','Middle East Freelance','EARN'],
+    ['InfoJobs','https://www.infojobs.net','Biggest job site in Spain','Spain','EARN'],
+    ['Indeed Spain','https://es.indeed.com','Job search in Spain','Spain','EARN'],
+    ['Tecnoempleo','https://www.tecnoempleo.com','Tech jobs in Spain','Spain','EARN'],
+    ['Malt Spain','https://www.malt.es','Freelance marketplace in Spain','Spain','EARN'],
+    ['EURES','https://eures.europa.eu','Official EU job mobility portal','Spain','INFO'],
+    ['Jobs.ch','https://www.jobs.ch','Biggest job site in Switzerland','Switzerland','EARN'],
+    ['Jobup.ch','https://www.jobup.ch','Jobs in French speaking Switzerland','Switzerland','EARN'],
+    ['JobScout24','https://www.jobscout24.ch','Swiss job portal','Switzerland','EARN'],
+    ['SwissDevJobs','https://swissdevjobs.ch','IT jobs in Switzerland with salaries','Switzerland','EARN'],
+    ['Indeed Switzerland','https://ch.indeed.com','Job search in Switzerland','Switzerland','EARN'],
+    ['Xing','https://www.xing.com','Professional network for DACH region','Switzerland','EARN'],
+    ['Swiss Migration (SEM)','https://www.sem.admin.ch','Official visa and permit info','Switzerland','INFO'],
+    ['Zhaopin','https://www.zhaopin.com','Major Chinese job platform','China','EARN'],
+    ['51job','https://www.51job.com','Large Chinese job portal','China','EARN'],
+    ['Liepin','https://www.liepin.com','Mid and senior level jobs','China','EARN'],
+    ['BOSS Zhipin','https://www.zhipin.com','Chat directly with hiring managers','China','EARN'],
+    ['Dave\'s ESL Cafe','https://www.eslcafe.com','English teaching jobs in China','China','EARN'],
+    ['ZBJ','https://www.zbj.com','Chinese freelance marketplace','China','EARN'],
+    ['USAJobs','https://www.usajobs.gov','Official US government jobs','USA','EARN'],
+    ['Dice','https://www.dice.com','Tech jobs in the US','USA','EARN'],
+    ['Handshake','https://joinhandshake.com','Jobs for students and graduates','USA','EARN'],
+    ['Braintrust','https://www.usebraintrust.com','Freelance tech talent network','USA','EARN'],
+    ['Catalant','https://gocatalant.com','Consulting and expert freelancers','USA','EARN'],
+    ['MyVisaJobs','https://www.myvisajobs.com','Find companies that sponsor visas','USA','INFO'],
+    ['H1BGrader','https://h1bgrader.com','H1B sponsor data','USA','INFO'],
+    ['USCIS','https://www.uscis.gov','Official US immigration info','USA','INFO'],
+    ['Relocate.me','https://relocate.me','Tech jobs with relocation help','Relocation & Europe','EARN'],
+    ['Landing.jobs','https://landing.jobs','Tech jobs in Europe with visa support','Relocation & Europe','EARN'],
+    ['Welcome to the Jungle','https://www.welcometothejungle.com','Jobs and company culture in Europe','Relocation & Europe','EARN'],
+    ['Teach Away','https://www.teachaway.com','Teaching jobs in many countries','Teaching Jobs Abroad','EARN'],
+    ['Search Associates','https://www.searchassociates.com','International school jobs','Teaching Jobs Abroad','EARN'],
+    ['TES Jobs','https://www.tes.com/jobs','Teaching jobs worldwide','Teaching Jobs Abroad','EARN']
+  ]}
+];
+</script>
+
+<script>
+/* ===== PART 2: SHOW ALL AI TOOLS CODE ===== */
+(function () {
+  var wrap = document.getElementById('tools-wrap');
+  var countEl = document.getElementById('count-shown');
+  var tabs = document.querySelector('.tk-tabs');
+  var search = document.getElementById('tool-search');
+  if (!wrap || typeof toolData === 'undefined') return;
+
+  (typeof extraTools !== 'undefined' ? extraTools : []).forEach(function (e) {
+    var cat = null;
+    toolData.forEach(function (c) { if (c.id === e.id) cat = c; });
+    if (!cat) { cat = {cat:e.cat, id:e.id, color:e.color, tools:[]}; toolData.push(cat); }
+    var have = {};
+    cat.tools.forEach(function (t) { have[String(t[0]).toLowerCase()] = 1; });
+    e.tools.forEach(function (t) {
+      if (!have[t[0].toLowerCase()]) cat.tools.push([t[0], t[1], t[2], t[4] !== 'none', t[3], (t[4] && t[4] !== 'none') ? t[4] : undefined]);
+    });
+  });
+
+  var filter = 'all', query = '', cloned = false;
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  function render() {
+    var q = query.trim().toLowerCase(), html = '', shown = 0;
+    toolData.forEach(function (c) {
+      if (filter !== 'all' && c.id !== filter) return;
+      var order = [], groups = {};
+      c.tools.forEach(function (t) {
+        var hay = (t[0] + ' ' + (t[2] || '') + ' ' + c.cat + ' ' + (t[4] || '')).toLowerCase();
+        if (q && hay.indexOf(q) === -1) return;
+        shown++;
+        var key = t[4] || '';
+        if (!groups[key]) { groups[key] = ''; order.push(key); }
+        groups[key] += '<a class="tool-card" href="' + esc(t[1]) + '" target="_blank" rel="noopener">' +
+          (t[3] ? '<span class="free-badge">' + esc(t[5] || 'FREE') + '</span>' : '') +
+          '<div style="font-weight:700;font-size:.9rem;margin-bottom:4px;padding-right:' + (t[3] ? '52px' : '0') + '">' + esc(t[0]) + '</div>' +
+          '<div style="font-size:.75rem;color:rgba(255,255,255,.6)">' + esc(t[2] || '') + '</div></a>';
+      });
+      if (order.length) {
+        html += '<div class="tk-category" style="border-left-color:' + esc(c.color) + '">' + esc(c.cat) + '</div>';
+        order.forEach(function (k) {
+          if (k) html += '<div style="grid-column:1/-1;margin:8px 0 2px;padding-left:10px;font-size:.85rem;font-weight:700;color:' + esc(c.color) + '">' + esc(k) + '</div>';
+          html += groups[k];
+        });
+      }
+    });
+    wrap.innerHTML = html;
+    if (countEl) countEl.textContent = shown;
+  }
+
+  function init() {
+    {
+      /* clone to drop any old listeners that may hide tools */
+      if (tabs) {
+        var nt = tabs.cloneNode(true);
+        tabs.parentNode.replaceChild(nt, tabs);
+        tabs = nt;
+        tabs.addEventListener('click', function (e) {
+          var b = e.target.closest('.tk-tab');
+          if (!b) return;
+          tabs.querySelectorAll('.tk-tab').forEach(function (x) { x.classList.remove('active'); });
+          b.classList.add('active');
+          filter = b.getAttribute('data-filter') || 'all';
+          render();
+        });
+      }
+      /* add tabs for new categories */
+      if (tabs) {
+        toolData.forEach(function (c) {
+          if (!tabs.querySelector('[data-filter="' + c.id + '"]')) {
+            var nb = document.createElement('button');
+            nb.className = 'tk-tab';
+            nb.setAttribute('data-filter', c.id);
+            nb.textContent = c.cat;
+            tabs.appendChild(nb);
+          }
+        });
+      }
+      /* keep the totals in the text accurate */
+      var total = 0;
+      toolData.forEach(function (c) { total += c.tools.length; });
+      var sub = document.querySelector('#toolkit .sec-sub');
+      if (sub) sub.textContent = sub.textContent.replace(/\d+/, total);
+      if (search) search.placeholder = 'Search ' + total + ' AI tools...';
+      if (search) {
+        var ns = search.cloneNode(true);
+        search.parentNode.replaceChild(ns, search);
+        search = ns;
+        search.addEventListener('input', function () { query = search.value; render(); });
+      }
+    }
+    render();
+  }
+
+  init();
+  document.addEventListener('DOMContentLoaded', init);
+  window.addEventListener('load', init);
+})();
+</script>
+
 </body>
 </html>
